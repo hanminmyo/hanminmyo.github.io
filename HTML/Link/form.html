@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Lesson</title>
+</head>
+<body>
+    <!--get carry data do not hidden and post carry data hidden-->
+    <h1>Student Registeration</h1>
+    <form action="request.php" method="get">
+    <label for="name">Name</label>
+    <input type="text" name="Stu_name" id="name" >
+    <br><br>
+    <label for="email">Email</label>
+    <input type="text" name="Stu_name" id="email" >
+    <br><br>
+    <label for="password">Password</label>
+    <input type="password" name="Stu_password" id="password" >
+    <br><br>
+    <label for="phone">Phone</label>
+    <input type="number" name="Stu_phone" id="phone" >
+    <br><br>
+    <label for="dob">Date of Birth</label>
+    <input type="date" name="Stu_dob" id="dob" >
+    <br><br>
+    <!--you can choose file like .jpg,jpeg,.png and you can choose any file type writhing with image/*-->
+    <label for="passport">Passport</label>
+    <input type="file" accept=".png,.jpg,.jpeg" name="Stu_passport" id="passport" >
+    <br><br>
+    <label for="">Gender</label>
+    <br><br>
+    <input type="radio" name="gender" id="male" value="Male"><label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="Female"><label for="female">Female</label>
+    <br><br>
+    <label for="year">Year</label>
+    <select name="year" id="year">
+    <option value="">Choose Year</option>
+    <option value="1">First Year</option>
+    <option value="2">Second Year</option>
+    <option value="3">Third Year</option>
+    </select>
+    <br><br>
+    <button type="submit">Save</button>
+    </form>
+</body>
+</html>
+
