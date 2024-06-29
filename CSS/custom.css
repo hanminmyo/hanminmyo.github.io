@@ -1,5 +1,8 @@
+
+/* color */
+/* 0->9| a->f */
 h1 {
-    color: red;
+    color: #0f0;;
     text-align: center;
 }
 P {
