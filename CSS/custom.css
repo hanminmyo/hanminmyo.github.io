@@ -2,11 +2,11 @@
 /* color */
 /* 0->9| a->f */
 h1 {
-    color: #0f0;;
+    color: #00f;;
     text-align: center;
 }
 P {
-    color: purple;
+    color: brown;
     text-indent: 50px;
     font-size:20px;
     word-spacing:20px;
