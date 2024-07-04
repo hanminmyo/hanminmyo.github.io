@@ -65,3 +65,14 @@ h2 a:active {
     color:yellow;
 } 
 
+/* Target */
+:target {
+    color: red;
+    border: 1px solid black;
+    line-height: 30px;
+    letter-spacing: 20px;
+
+    
+
+}
+
