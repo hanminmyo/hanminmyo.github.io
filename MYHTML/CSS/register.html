@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register</title>
+    <link rel="stylesheet" href="register.css">
+    <!-- href means hypertext reference -->
+    
+</head>
+<body>
+    <!-- id="title" သည် register.css မှ #title နှင့်ချိတ်၍ align->center/color->red 
+     သို့ပြောင်းသွားသည် -->
+
+    <h1 id="title">Student Register</h1>
+
+    <form action="" method="">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@gmail.com">
+        </div>
+        <br>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" placeholder="09*******">
+        </div>
+        <br>
+        <div>
+            <label for="fathername">Father Name</label>
+            <input type="text" id="fathername">
+        </div>
+        <br>
+        <div>
+            <label for="dob">DOB</label>
+            <input type="date" id="dob">
+        </div>
+        <br>
+        <div>
+            <label for="Gender"></label>
+            <br>
+            <!-- name="gender" ကို အတူတူထည့်ပေးမှ result တွင် male or female တစ်ခုခုကိုရွေး၍ရမည် -->
+            <input type="radio" value="male" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" value="female" id="female" name="gender">
+            <label for="female">Female</label>
+
+        </div>
+        <br>
+        <label for="">Hobbies</label>
+
+        <div>
+            <input type="checkbox" name="swimming" id="swimming">
+            <label for="swimming">Swimming</label>
+        </div>
+        <div>
+            <input type="checkbox" name="reading" id="reading">
+            <label for="reading">Reading</label>
+        </div>
+        <div>
+            <input type="checkbox" name="dancing" id="dancing">
+            <label for="dancing">Dancing</label>
+        </div>
+        <div>
+            <input type="checkbox" name="travelling" id="travelling">
+            <label for="travelling">Travelling</label>
+        </div>
+        <div>
+            <input type="checkbox" name="drawing" id="drawing">
+            <label for="drawing">Drawing</label>
+        </div>
+
+        <fieldset>
+            <legend>Rules</legend>
+            <ul>
+                <li>this is first rule</li>
+                <li>this is second rule</li>
+                <li>this is third rule</li>
+                <li>this is fourth rule</li>
+                <li>this is fifth rule</li>
+                <li>this is sixth rule</li>
+                <li>this is seventh rule</li>
+            </ul>
+
+            <p></p>
+            <button>Register</button>
+        </fieldset>
+
+
+
+
+
+
+    </form>
+</body>
+</html>

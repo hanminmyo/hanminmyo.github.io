@@ -1,0 +1,79 @@
+/*Universal Selector*/
+ /* *{
+    color:green;
+} */
+
+/*Tag or Element Selector*/
+h1{
+    text-align: center;
+    color:red;
+}
+
+/*attribute selector*/
+a[title="google"]{
+    letter-spacing: 20px;
+}
+/* id selector */
+#idselector{
+    text-indent: 40px;
+}
+/* class selector */
+.classselector{
+    color: brown;
+    letter-spacing:10px;
+    word-spacing:20px;
+    line-height:40px;
+}
+
+/*Descendant Selector */
+div p {
+    background-color: yellow ;
+}
+
+/* Child Selector */
+div>p {
+    color: black;
+}
+
+span>p {
+    color:green;
+}
+/* Pseudo Selector */
+h1 a:hover{
+    color: white;
+    font-size: 50px;
+    background-color: red;
+}
+
+h1:hover{
+    color:darkolivegreen;
+}
+
+h2 a:link {
+    color:green;
+} 
+
+ h2 a:hover {
+    color:greenyellow;
+} 
+
+ h2 a:visited {
+    color: brown;
+}   
+
+h2 a:active {
+    color:yellow;
+} 
+
+/* Target */
+/* .CSS မှ ချိတ်ထားသော html file ၏ paragraph ကို  style လှမ်းပြောင်းလိုလျင် ပြောင်းလိုသော
+စာပိုဒ်၏ element p/div/niv စသဖြင့်ထည့်ပေးပါ ။ အောင်တွင်  div:target ဟုထည့်ပါက div element 
+ဖြင့်ရေးထားသောစာပိုဒ်သည်  style ပြောင်းလဲမည်ဖြစ်သည်။ target ပဲရေးပါကစာပိုဒ် ၂ ခုစလုံးစတိုင်ပြောင်းလဲမည်ဖြစ်သည်။ */
+/* div:target/p:target/ :target စသည်ဖြင့်ရေးနိုင်သည် */
+:target{
+    color: red;
+    border: 5px dotted blue;
+    line-height: 30px;
+    letter-spacing: 20;
+}
+

@@ -1,0 +1,38 @@
+#title{
+   text-align: center;
+   color: darkslategrey ; 
+}
+body{
+    background-color:gray;
+}
+form{
+    width: 40%;
+    margin: auto;
+}
+/* attribule selector[] ကိုသုံးမယ်(နောက်ပိုင်းအသုံးနည်းသွား) */
+/* form input ကိုခေါ်ခြင်းသည် descendent selector */
+input[type="text"],input[type="email"],input[type="number"],input[type="date"]{
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+/* register.html မှ input type=text ၂ ခုဖြစ်သော name box နှင့် father nameတို့သည်
+ focus တင်လိုက်သည့်အခါ border ဘောင်များ grey သို့ပြောင်းသွားမည်။ထို့နည်းတူစွာအခြား
+ input type များဖြစ်သော email, number နှင့် date တို့အား focus border တင်လိုက်ပါမည် */
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="number"]:focus,input[type="date"]:focus{
+border: 4px solid grey;
+border-radius: 5px;
+}
+/* Gender->Male နှင့် Female ကိုရွေးလိုက်သောအခါ color နှင့် ူ letter spacing 
+ကိုပြောင်းလဲသွားအောင် attribute selector ဖြင့်ရေးလိုက်ပါသည်။ */
+
+input[type="radio"]:checked+label{
+    color:mediumblue;
+    letter-spacing: 10px;
+}
+/* hobbie များအား color နှင့် font style change ခြင်း */
+input[type="checkbox"]:enabled+label{
+    color:navy;
+    font-style: italic;
+}

@@ -1,0 +1,12 @@
+body{
+background-color: cadetblue;
+color: black;
+}
+input[type="checkbox"]:enabled+label{
+    color:navy;
+    font-style: italic;
+}
+input[type="radio"]:checked+label{
+    color:mediumblue;
+    letter-spacing: 10px;
+}
