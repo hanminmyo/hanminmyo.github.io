@@ -26,14 +26,14 @@ a[title="google"]{
 }
 
 /*Descendant Selector */
-div p {
+/* div p {
     background-color: yellow ;
 }
 
 /* Child Selector */
 div>p {
     color: black;
-}
+} */
 
 span>p {
     color:green;
@@ -71,8 +71,56 @@ h2 a:active {
     border: 1px solid black;
     line-height: 30px;
     letter-spacing: 20px;
-
-    
-
 }
+
+/* layout */
+.inline{
+    border: 2px solid red;
+    display: inline-block;
+    width: 400px;
+}
+
+.block{
+    border: 2px solid green;
+    width: 400px;
+    display: inline-block;
+}
+
+/* float */
+/* with descendent selector */
+.float_right img{
+    width: 40%;
+    float: right;
+}
+.clear{
+    clear: both;
+}
+
+.float_left img{
+    width: 40%;
+    float: left;
+}
+
+/* Grid */
+.gridOne div,.gridTwo div,.gridThree div{
+    padding: 20px;
+    color:white;
+    text-align: center;
+}
+.gridOne,.gridTwo,.gridThree{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridTwo{
+    grid-row-gap:40px;
+}
+.gridThree{
+    grid-row-gap:40px;
+    /* grip-gap:40px; */
+    grid-column-gap:70px;
+}
+
+
+
 
