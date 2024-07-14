@@ -48,6 +48,43 @@
 /* end nav */
 
 /* start bunner */
+.container {
+    max-width: 100%; /* Ensures container adjusts to screen width */
+    padding: 20px; /* Adjust padding as per your design */
+    box-sizing: border-box; /* Ensures padding doesn't affect max-width */
+}
+
+.onlineshop2_img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Ensures aspect ratio is maintained */
+    display: block; /* Removes any default inline block space */
+}
+
+.onlineshop2_text {
+    text-align: center; /* Center aligns text content */
+    padding: 20px; /* Adds padding around text content */
+}
+
+.onlineshop2_text h1 {
+    font-size: 24px; /* Adjust heading font size */
+    margin-bottom: 10px; /* Adds space below heading */
+}
+
+.onlineshop2_text p {
+    font-size: 16px; /* Adjust paragraph font size */
+    line-height: 1.5; /* Increases line spacing for readability */
+}
+
+.shop_now {
+    background-color: #3498db; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Removes default button border */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 16px; /* Button font size */
+    margin-top: 15px; /* Adds space above button */
+}
+
 
 .onlineshop2_img{
     width: 100%;
