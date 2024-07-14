@@ -63,11 +63,13 @@
 .onlineshop2_text {
     text-align: center; /* Center aligns text content */
     padding: 20px; /* Adds padding around text content */
+    background-color: rgba(0, 0, 0, 0.2);
+
 }
 
-.onlineshop2_text h1 {
+.onlineshop2_text h2 {
     font-size: 24px; /* Adjust heading font size */
-    margin-bottom: 10px; /* Adds space below heading */
+    margin-bottom: auto; /* Adds space below heading */
 }
 
 .onlineshop2_text p {
@@ -92,15 +94,15 @@
 
 .onlineshop2_text{
     position:absolute;
-    top: 300px;
+    top: 270px;
     left: 100px;
     color: white;
-    background-color:rgba(0, 0, 0, 0.2) ;
+    background-color:rgba(0, 0, 0, 0.4) ;
     padding:40px;
 }
 
 .onlineshop2_text h2{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .shop_now{
@@ -111,6 +113,11 @@
     border:1px solid orange;
     border-radius: 5px;
 }
+/* End Bunner */
+
+
+/* Start Features */
+
 .features {
     display: flex;
     justify-content: space-around; /* Adjust alignment as needed */
@@ -155,3 +162,4 @@
     font-size: 30px;
     color: orange;
 }
+/* End Features */
