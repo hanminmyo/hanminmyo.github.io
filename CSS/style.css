@@ -4,9 +4,9 @@
 } */
 
 /*Tag or Element Selector*/
-h1{
+h1,h2{
     text-align: center;
-    color:red;
+    color:burlywood;
 }
 
 /*attribute selector*/
@@ -45,7 +45,7 @@ h1 a:hover{
     background-color: red;
 }
 
-h1:hover{
+h1:hover,h2:hover{
     color:darkolivegreen;
 }
 
@@ -75,9 +75,9 @@ h2 a:active {
 
 /* layout */
 .inline{
-    border: 2px solid red;
+    border: 2px solid chartreuse;
     display: inline-block;
-    width: 400px;
+    width: 500px;
 }
 
 .block{
@@ -102,24 +102,82 @@ h2 a:active {
 }
 
 /* Grid */
-.gridOne div,.gridTwo div,.gridThree div{
-    padding: 20px;
-    color:white;
+/* div စာပိုဒ်မှ စာလုံး အရောင်နှင့် စာ alignment များကို ဖန်တီးသည် */
+.gridOne div,.gridTwo div,.gridThree div,.gridFour div,.gridFive div{
+    padding: 15px;
+    color:black;
     text-align: center;
 }
-.gridOne,.gridTwo,.gridThree{
+.gridOne,.gridTwo,.gridThree,.gridFour,.gridFive{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
 }
 
 .gridTwo{
-    grid-row-gap:40px;
+    grid-Column-gap:40px;
 }
 .gridThree{
     grid-row-gap:40px;
     /* grip-gap:40px; */
     grid-column-gap:70px;
 }
+.columnadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.rowadd{
+    grid-column-start:2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+/* Position */
+.parent_absolute{
+    width: 1200px;
+    height: 500px;
+    border: 2px solid red;
+    position: relative;
+    top: 10px;
+    left:150px;
+}
+.absolute{
+    width: 400px;
+    height: 200px;
+    border: 2px solid green;
+    position:absolute;
+    top: 10px;
+    left: 150px;
+}
+.parent_relative{
+    width: 1200px;
+    height: 500px;
+    border: 2px solid yellow;
+}
+.relative{
+    width: 400px;
+    height: 200px;
+    border: 2px solid brown ;
+    position:relative ;
+    top:10px ;
+    left: 150px;
+}
+.fixed{
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+.online{
+font-family: "Playwrite CL", cursive;
+font-optical-sizing: auto;
+font-style: normal;
+}
+@font-face{
+    font-family:"playwrite";
+    src:url(Playwrite_CL/PlaywriteCL-VariableFont_wght.ttf)
+}
+.offline{
+    font-family: "playwrite";
+}
+
 
 
 
