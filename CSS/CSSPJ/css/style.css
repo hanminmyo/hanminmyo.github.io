@@ -148,10 +148,11 @@
 }
 
 .feature p {
-    text-decoration:none;
     font-size: 14px; /* Paragraph font size */
     color: black; /* Paragraph color */
     line-height: 1.5; /* Adjust line height for readability */
+    text-decoration:none;
+
 }
 
 .fa-truck-arrow-right,.fa-phone-volume,.fa-gift{
