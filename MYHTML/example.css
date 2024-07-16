@@ -1,6 +1,6 @@
 body{
 background-color: cadetblue;
-color: black;
+color: greenyellow;
 }
 input[type="checkbox"]:enabled+label{
     color:navy;
