@@ -126,7 +126,7 @@
 
 .feature {
     text-align: center;
-    padding: 20px;
+    padding: 3px;
     border: 1px solid #ccc; /* Border styling */
     border-radius: 8px; /* Rounded corners */
     width: 20%; /* Adjust width as per your design */
@@ -164,3 +164,91 @@
     color: orange;
 }
 /* End Features */
+
+/* start promotion */
+.promotion_title{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.divided{
+    width: 80px;
+    border: 2px solid gold;
+    margin-left: 150px;
+}
+.promotion{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 10px 150px;
+    grid-column-gap: 30px;
+}
+.promotion_image{
+    width: 100%;
+}
+.promotion_item{
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: relative;
+}
+.promotion_item_name{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.promotion_price{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+.discount_price{
+    color: black ;
+    display: block;
+}
+.narmal_price{
+    color: red;
+    text-decoration:line-through;
+}
+/* end promotion */
+
+/* start new arrival */
+.new_arrival{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 10px 150px;
+    grid-column-gap: 30px;
+}
+.new_arrival_item{
+    border: 1px solid gray;
+    padding: 0px 20px 10px;
+    position: relative;
+}
+.new_arrival_text{
+    display: inline-block;
+}
+.whist_list{
+    float: right;
+}
+.new_arrival_img{
+    width: 100%;
+}
+.new_arrrival_icon{
+    position: absolute;
+    top:40%;
+    left:40%;
+    opacity: 0;
+}
+.new_arrrival_icon a{
+    border: 1px solid red;
+    background-color: rgb(233, 223, 223);
+    color: red; 
+    padding: 10px;
+    border-radius: 5px;
+}
+.new_arrrival_icon a:hover{
+    background-color: red;
+    color: white;
+}
+.new_arrival_img:hover .new_arrrival_icon{
+    opacity: 1;
+}
+.new_arrival_img:hover{
+    opacity:0.6;
+}
