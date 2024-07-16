@@ -214,6 +214,7 @@
     grid-template-columns: auto auto auto auto;
     margin: 10px 150px;
     grid-column-gap: 30px;
+    grid-row-gap: 30px;
 }
 .new_arrival_item{
     border: 1px solid gray;
