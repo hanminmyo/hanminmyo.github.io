@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function Lessons</h1>
+    <script>
+        //function syntax
+        //function name () {
+        //      //code
+        //  }
+        function fullName(){
+            document.write("my name is mg mg win!<br>")
+        }
+        fullName(); //function မှာပေးထားတဲ့ နာမည်ကိုပြန်ခေါ်မှ result ကိုရမည်
+
+       function sum(num1,num2){
+        let result = num1 + num2 ;
+        document.write(`Your result is = ${num1 + num2}<br>`)
+       }
+       sum(5,8);
+       sum(5128,8405);
+       sum(3579,4216);
+       sum(321,797);
+       sum(907,4324);
+
+       //default parameter function
+       //sub နှုတ်ခြင်း
+       function sub(num1=100, num2 = 50){
+        document.write(`Your sub result is = ${num1 - num2} <br>`)
+       }
+       sub();// result 50
+       sub(300,45);// result 255
+       sub(200); //result (200-50= 150)
+
+
+       //return function
+       // multi (မြှောက်ခြင်း)  
+       function multi(num1, num2){
+        let result = num1 * num2 ;
+        return result;
+       }
+       multi(2,5)
+
+       let multiResult =  multi(2,5); 
+       document.write("My multiResult is =" + multiResult + "<br>")
+    </script>
+</body>
+</html>
