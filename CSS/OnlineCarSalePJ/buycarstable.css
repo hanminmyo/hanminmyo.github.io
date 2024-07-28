@@ -1,0 +1,53 @@
+/* General table styles */
+.cars-buy-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.cars-buy-table th, .cars-buy-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.cars-buy-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.cars-buy-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.cars-buy-table td img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cars-buy-table td h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cars-buy-table td .news_date {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.cars-buy-table td .read_more_buy {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cars-buy-table td .read_more_buy:hover {
+    background-color: #0056b3;
+}
