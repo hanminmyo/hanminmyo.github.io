@@ -408,7 +408,7 @@ header {
 }
 
 .article a:hover {
-    background-color: #0056b3;
+    background-color: goldenrod;
 }
 /* ----------------End Car News Section Section---------------- */
 
@@ -472,7 +472,7 @@ header {
 }
 
 .dialog-box .button:hover {
-    background-color: blue; 
+    background-color: goldenrod; 
 }
 .dialog-box .button.google:hover {
     background-color: #388E3C;
@@ -577,9 +577,9 @@ header {
 .form-group label {
     display: block;
     font-weight: lighter;
-    margin-bottom: 15px; /* Increased margin for better spacing */
+    margin-bottom: 15px; 
     color: goldenrod;
-    font-size: 2rem; /* Adjust this value as needed */
+    font-size: 2rem; 
 }
 
 
@@ -614,7 +614,7 @@ input[type="password"]:focus {
 .button {
     display: inline-block;
     padding: 12px 20px;
-    background-color: #007bff; /* Bootstrap Primary Blue */
+    background-color: #007bff; 
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -628,7 +628,7 @@ input[type="password"]:focus {
 }
 
 .button:hover {
-    background-color: #0056b3; /* Darker shade for hover effect */
+    background-color: goldenrod; 
 }
 
 @media (max-width: 480px) {
@@ -645,28 +645,17 @@ input[type="password"]:focus {
     color: white;
     padding-top: 70px 0px;
     display: grid;
-    /* grid-template-columns: 800px 200px 200px auto; */
     grid-template-columns: 1fr 200px 200px auto;
 }
-/* .footer_about{
-    margin-left: 100px;
-    margin-right: 90px;
-} */
 .footer_about {
-    margin-left: 100px; /* Adjust margin as needed */
-    margin-right: 50px; /* Adjust margin as needed */
-    text-align: left; /* Aligns text content to the right */
+    margin-left: 100px; 
+    margin-right: 50px; 
+    text-align: left; 
 }
-
-
-
-/* .footer_about h2{
-    margin-left: 70px;
-} */
 .footer_about h2 {
     margin-top: 10px;
-    margin-left: auto; /* Pushes the heading to the right */
-    margin-right: 0; /* Reset right margin */
+    margin-left: auto; 
+    margin-right: 0; 
 }
 .divided_footer{
     width: 220px;
