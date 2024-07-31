@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Table for daily</title>
+    <style>
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-size: 16px;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid gray;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .total-row {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Daily Food List</h1>
+
+    <form name="foodForm">
+        <label for="foodName">Food Name:</label>
+        <input type="text" name="foodName" placeholder="Enter Food Name"><br>
+        <label for="price">Price (MMK):</label>
+        <input type="number" name="price" step="0.01" min="0" placeholder="Enter price"><br>
+        <button type="button" onclick="addRow()">Add To Table</button>
+    </form>
+
+    <!-- <h1>Food </h1> -->
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Food Name</th>
+                <th>Price (MMK)</th>
+            </tr>
+        </thead>
+        <tbody id="foodBody">
+            <!-- Rows will be added here by JavaScript -->
+        </tbody>
+        <tfoot>
+            <tr class="total-row">
+                <td colspan="2">Total</td>
+                <td id="totalAmount">MMK 0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        let foodArray = [];
+        let itemCount = 0;
+
+        function addRow() {
+            // Get food data from form
+            let foodName = document.foodForm.foodName.value;
+            let price = parseFloat(document.foodForm.price.value) || 0;
+
+            // Create food object
+            let food = {
+                food_name: foodName,
+                food_price: price
+            };
+
+            // Add food to array
+            foodArray.push(food);
+            itemCount++;
+
+            // Show food data
+            getFoodData();
+        }
+
+        function getFoodData() {
+            let html = '';
+            let total = 0;
+
+            for (let i = 0; i < foodArray.length; i++) {
+                let foodObj = foodArray[i];
+                html += `<tr>
+                            <td>${i + 1}</td>
+                            <td>${foodObj.food_name}</td>
+                            <td>${foodObj.food_price.toFixed(2)}</td>
+                        </tr>`;
+                total += foodObj.food_price;
+            }
+
+            // Update table body and total amount
+            document.getElementById('foodBody').innerHTML = html;
+            document.getElementById('totalAmount').textContent = `${total.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
