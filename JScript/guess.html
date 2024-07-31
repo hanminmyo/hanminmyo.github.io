@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guess</title>
 </head>
 <body>
     <h1>Guess Game</h1>
-    <script>
-        let secretNo = 7 ;
-        let userNo = prompt("Guess a Number between 1 and 20!")
-        while(secretNo != userNo){
-            
-        }
 
-        if (userNo > secretNo){
-            document.write("your number is greater than secret no, please try again");
-        }else{
-            document.write("your number is lower than secret no, please try again");
+    <script>
+        let secretNumber = 7 ;
+        let enterNumber = prompt("Guess Number between 1 to 20!");
+        let time = 0 ; time++ ;
+
+        while (secretNumber != enterNumber) {
+            if (secretNumber > enterNumber) {
+                alert("Number is Smaller than secretNumber");
+            }else{
+                alert("Number is Greater than secretNumber");
+            }
+            enterNumber = prompt ("Guess Number between 1 to 20!");
+            time++;
         }
-        userNo = prompt("Gu")
+        
+        if (secretNumber=enterNumber) {
+            document.write (`Oops, Bravo! Your Number is right at ${time} time.`)
+        }
+        
     </script>
 </body>
 </html>

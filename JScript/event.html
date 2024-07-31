@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Function</h1>
+    <img src="imageForEvent/autumn.avif" width="300" height="300" onmouseenter="big()" id="myImage" onmouseout="normal()">
+
+    <br><br>
+    <input type="text" id="myInput" onkeyup="showData()">
+    <script>
+        //onmouseover
+        //onmouseenter
+        
+        //onmousedown
+        //onclick
+
+        //onmouseleave
+        //onmouseout
+
+        //onkeyup
+        //onkeydown
+        //onchange
+
+        function big() {
+            let myImage = document.getElementById('myImage');
+            myImage.style.width = "500px";
+            myImage.style.height = "500px";
+
+        }
+        function normal() {
+            let myImange = document.getElementById('myImage');
+            myImage.style.width = "300px";
+            myImage.style.height = "300px";
+
+        }
+        function showData() {
+            let myImange = document.getElementById('myInput');
+            let myData = myInput.value;
+            document.getElementById('myResult').innerHTML = myData;
+        }
+        
+    </script>
+</body>
+</html>

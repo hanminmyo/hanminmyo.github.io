@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Table</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: inherit;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid cadetblue;
+        }
+        th {
+            background-color: gray;
+        }
+        td {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Food Table</h1>
+    <table id="foodTable" align="left">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Food Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mohinga and Tea</td>
+                <td>2500 MMK</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Fried Noodle with pork</td>
+                <td>5000 MMK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Tea Salad and Rakhine Motti</td>
+                <td>3800 MMK</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Sushi and Hotpot</td>
+                <td>55000 MMK</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="totalPrice"> 0.000 MMK</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function calculateTotal() {
+            const table = document.getElementById('foodTable');
+            const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+            let total = 0;
+
+            for (let i = 0; i < rows.length - 1; i++) { 
+                const priceCell = rows[i].getElementsByTagName('td')[2];
+                const price = parseFloat(priceCell.textContent.replace('', ''));
+                total += price;
+            }
+
+            document.getElementById('totalPrice').textContent = `${total.toFixed(2)}MMK`;
+        }
+
+        window.onload = calculateTotal;
+    </script>
+</body>
+</html>
