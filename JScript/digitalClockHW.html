@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock with Date</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        #clock {
+            font-size: 3rem; /* Adjust the font size as needed */
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border: 5px solid white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        #date-time {
+            font-size: 1.5rem; /* Adjust the font size for date */
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">
+        <div id="date-time">Loading...</div>
+        <div id="time">Loading...</div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            
+            const dayOfWeek = days[now.getDay()];
+            const month = months[now.getMonth()];
+            const day = now.getDate().toString().padStart(2, '0');
+            const year = now.getFullYear();
+            
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+
+            const dateString = `${dayOfWeek}, ${month} ${day}, ${year}`;
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            
+            document.getElementById('date-time').textContent = dateString;
+            document.getElementById('time').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+
+        updateClock();
+    </script>
+</body>
+</html>
