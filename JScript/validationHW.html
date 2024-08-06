@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 40%;
+            margin: auto;
+        }
+        input {
+            width: 100%;
+            padding: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 40px;
+        }
+        label {
+            margin-top: 30px;
+            display: block;
+        }
+        .error {
+            color: brown;
+            margin: 0;
+        }
+        .error-border {
+            border: 1px solid brown;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color:blue;">Your Login</h1>
+    
+    <form action="index.html" method="post" onsubmit="return checkValidation()">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <p id="emailErrorMessage" class="error"></p>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <p id="passwordErrorMessage" class="error"></p>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        function checkValidation() {
+            let email = document.getElementById('email').value.trim();
+            let password = document.getElementById('password').value.trim();
+            let isValid = true;
+
+            // Clear previous error messages
+            document.getElementById('emailErrorMessage').innerHTML = "";
+            document.getElementById('passwordErrorMessage').innerHTML = "";
+            document.getElementById('email').classList.remove('error-border');
+            document.getElementById('password').classList.remove('error-border');
+
+            // Validate email
+            if(email === "" && password === "") {
+                document.getElementById('emailErrorMessage').innerHTML = "Please fill your email!";
+                document.getElementById('passwordErrorMessage').innerHTML = "Please fill your password!";
+                document.getElementById('email').classList.add('error-border');
+                document.getElementById('password').classList.add('error-border');
+                isValid = false;
+            } else if(email === "") {
+                document.getElementById('emailErrorMessage').innerHTML = "Please fill your email!";
+                document.getElementById('email').classList.add('error-border');
+                isValid = false;
+            } else if(password === "") {
+                document.getElementById('passwordErrorMessage').innerHTML = "Please fill your password!";
+                document.getElementById('password').classList.add('error-border');
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+</html>
