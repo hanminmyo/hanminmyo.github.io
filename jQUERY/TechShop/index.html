@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IT Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#laptops">Laptops</a></li>
+                <li><a href="#iphones">Smart Phones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="laptops">
+            <h2>Laptops</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/Macbookpro.jpg" alt="Laptop 1"></td>
+                        <td> Macbook Pro 16 inches (2023)</td>
+                        <td>8,450,000 MMK</td>
+                        <td><button onclick="addToCart('Laptop 1', 2300000)">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/dell.jpg" alt="Laptop 2"></td>
+                        <td>Dell XPS 13</td>
+                        <td>1,690,000 MMK</td>
+                        <td><button onclick="addToCart('Laptop 2', 2000000)">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/lenovo.avif" alt="Laptop 3"></td>
+                        <td>Lenovo Think Book 14</td>
+                        <td>1,015,000 MMK</td>
+                        <td><button onclick="addToCart('Laptop 3', 1900000)">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/acer.jpg" alt="Laptop 4"></td>
+                        <td>Acer Aspire 5</td>
+                        <td>799,000 MMK</td>
+                        <td><button onclick="addToCart('Laptop 4', 1850000)">Add to Cart</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="iphones">
+            <h2>Smart Phones</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/iph15ProMax.jpg" alt="iPhone 1"></td>
+                        <td>iPhone 15 ProMax</td>
+                        <td>7,270,000 MMK</td>
+                        <td><button onclick="addToCart('iPhone 1', 3400000)">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/S24Ultra.webp" alt="iPhone 2"></td>
+                        <td>Samsung S24 Ultra</td>
+                        <td>6,975,000 MMK</td>
+                        <td><button onclick="addToCart('iPhone 2', 3200000)">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/sony2.webp" alt="iPhone 3"></td>
+                        <td>Sony Xperia 10 IV</td>
+                        <td>2,755,000 MMK</td>
+                        <td><button onclick="addToCart('iPhone 3', 3100000)">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/GooglePixel6Pro.jpg" alt="iPhone 4"></td>
+                        <td>Google Pixel 8 Pro</td>
+                        <td>2,430,000 MMK</td>
+                        <td><button onclick="addToCart('iPhone 4', 3000000)">Add to Cart</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script>
+        let cart = {};
+
+        function addToCart(item, price) {
+            if (cart[item]) {
+                cart[item].quantity += 1;
+            } else {
+                cart[item] = { price: price, quantity: 1 };
+            }
+            console.log(cart);
+        }
+    </script>
+</body>
+</html>

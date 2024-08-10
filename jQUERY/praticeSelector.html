@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>jQuery Selector</h1>
+    <button id="click">Click</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        //$(selector).action(callback)
+        $(document).ready(function(){
+            $('#click').click(function(){
+                alert('jQuery is funny!');
+            })
+        })
+    </script>
+    
+</body>
+</html>
