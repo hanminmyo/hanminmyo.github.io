@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Shop</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="newstyles.css">
     <style>
-        /* Add your CSS styles here */
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -45,25 +45,35 @@
             color: #333;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 2rem;
+        /* Product Section Styles */
+        .product-section {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 1rem;
+            padding: 1rem 0;
         }
 
-        th, td {
+        .product-item {
+            background-color: #fff;
             border: 1px solid #ddd;
-            padding: 0.5rem;
+            border-radius: 5px;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
+            flex: 0 0 auto;
+            width: 250px; 
         }
 
-        th {
-            background-color: #f4f4f4;
-        }
-
-        img {
-            max-width: 150px;
+        .product-item img {
+            max-width: 100%;
             height: auto;
+            border-radius: 8px;
+            border-bottom: 2px solid #ddd; 
+            margin-bottom: 0.5rem; 
         }
 
         button {
@@ -73,10 +83,51 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
         }
 
         button:hover {
             background-color: #0056b3;
+        }
+
+        /* Stylish Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .btn-cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-cell button {
+            padding: 0.5rem;
         }
     </style>
 </head>
@@ -93,52 +144,75 @@
     </header>
 
     <main>
+        <!-- Laptops Section -->
         <section id="laptops">
             <h2>Laptops</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Image</th>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="images/Macbookpro.jpg" alt="Laptop 1"></td>
-                        <td> Macbook Pro 16 inches (2023)</td>
-                        <td>8,450,000 MMK</td>
-                        <td><button onclick="addToCart('Laptop 1', 2300000)">Add to Cart</button></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/dell.jpg" alt="Laptop 2"></td>
-                        <td>Dell XPS 13</td>
-                        <td>1,690,000 MMK</td>
-                        <td><button onclick="addToCart('Laptop 2', 2000000)">Add to Cart</button></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/lenovo.avif" alt="Laptop 3"></td>
-                        <td>Lenovo Think Book 14</td>
-                        <td>1,015,000 MMK</td>
-                        <td><button onclick="addToCart('Laptop 3', 1900000)">Add to Cart</button></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/acer.jpg" alt="Laptop 4"></td>
-                        <td>Acer Aspire 5</td>
-                        <td>799,000 MMK</td>
-                        <td><button onclick="addToCart('Laptop 4', 1850000)">Add to Cart</button></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="product-section">
+                <div class="product-item">
+                    <img src="images/macbookPro.png" alt="Macbook Pro 16 inches (2023)">
+                    <h3>Macbook Pro 16 inches (2023)</h3>
+                    <p>8,450,000 MMK</p>
+                    <button onclick="addToCart('Macbook Pro 16 inches (2023)', 8450000)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/dell-xps-new.png" alt="Dell XPS 13">
+                    <h3>Dell XPS 13</h3>
+                    <p>1,690,000 MMK</p>
+                    <button onclick="addToCart('Dell XPS 13', 1690000)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/lenovo-ideapad-new.png" alt="Lenovo Think Book 14">
+                    <h3>Lenovo Think Book 14</h3>
+                    <p>1,015,000 MMK</p>
+                    <button onclick="addToCart('Lenovo Think Book 14', 1015000)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/acer-aspire7.png" alt="Acer Aspire 5">
+                    <h3>Acer Aspire 5</h3>
+                    <p>799,000 MMK</p>
+                    <button onclick="addToCart('Acer Aspire 5', 799000)">Add to Cart</button>
+                </div>
+            </div>
         </section>
 
+        <!-- Smart Phones Section -->
         <section id="iphones">
             <h2>Smart Phones</h2>
+            <div class="product-section">
+                <div class="product-item">
+                    <img src="images/iph15ProMax.jpg" alt="iPhone 15 ProMax">
+                    <h3>iPhone 15 ProMax</h3>
+                    <p>7,270,000 MMK</p>
+                    <button onclick="addToCart('iPhone 15 ProMax', 7270000)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/S24Ultra.webp" alt="Samsung S24 Ultra">
+                    <h3>Samsung S24 Ultra</h3>
+                    <p>6,975,000 MMK</p>
+                    <button onclick="addToCart('Samsung S24 Ultra', 6975000)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/sony2.webp" alt="Sony Xperia 10 IV">
+                    <h3>Sony Xperia 10 IV</h3>
+                    <p>2,755,000 MMK</p>
+                    <button onclick="addToCart('Sony Xperia 10 IV', 2755000)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/GooglePixel6Pro.jpg" alt="Google Pixel 8 Pro">
+                    <h3>Google Pixel 8 Pro</h3>
+                    <p>2,430,000 MMK</p>
+                    <button onclick="addToCart('Google Pixel 8 Pro', 2430000)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Overview Table -->
+        <section>
+            <h2>Product Overview</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Image</th>
+                        <th>Category</th>
                         <th>Product</th>
                         <th>Price</th>
                         <th>Action</th>
@@ -146,28 +220,36 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="images/iph15ProMax.jpg" alt="iPhone 1"></td>
+                        <td>Laptops</td>
+                        <td>Macbook Pro 16 inches (2023)</td>
+                        <td>8,450,000 MMK</td>
+                        <td class="btn-cell">
+                            <button onclick="addToCart('Macbook Pro 16 inches (2023)', 8450000)">Add to Cart</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Laptops</td>
+                        <td>Dell XPS 13</td>
+                        <td>1,690,000 MMK</td>
+                        <td class="btn-cell">
+                            <button onclick="addToCart('Dell XPS 13', 1690000)">Add to Cart</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Smart Phones</td>
                         <td>iPhone 15 ProMax</td>
                         <td>7,270,000 MMK</td>
-                        <td><button onclick="addToCart('iPhone 1', 3400000)">Add to Cart</button></td>
+                        <td class="btn-cell">
+                            <button onclick="addToCart('iPhone 15 ProMax', 7270000)">Add to Cart</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td><img src="images/S24Ultra.webp" alt="iPhone 2"></td>
+                        <td>Smart Phones</td>
                         <td>Samsung S24 Ultra</td>
                         <td>6,975,000 MMK</td>
-                        <td><button onclick="addToCart('iPhone 2', 3200000)">Add to Cart</button></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/sony2.webp" alt="iPhone 3"></td>
-                        <td>Sony Xperia 10 IV</td>
-                        <td>2,755,000 MMK</td>
-                        <td><button onclick="addToCart('iPhone 3', 3100000)">Add to Cart</button></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/GooglePixel6Pro.jpg" alt="iPhone 4"></td>
-                        <td>Google Pixel 8 Pro</td>
-                        <td>2,430,000 MMK</td>
-                        <td><button onclick="addToCart('iPhone 4', 3000000)">Add to Cart</button></td>
+                        <td class="btn-cell">
+                            <button onclick="addToCart('Samsung S24 Ultra', 6975000)">Add to Cart</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
