@@ -31,7 +31,7 @@
 
         nav ul li {
             display: inline;
-            margin: 0 10px;
+            margin: 0 40px;
         }
 
         nav ul li a {
@@ -42,10 +42,21 @@
         main {
             padding: 1rem;
         }
-
-        h1, h2 {
-            color: #333;
+        h1 {
+            text-align: left;
+            margin: auto;
+            margin-right: 30px;
         }
+        h2 {
+            border-bottom: 2px solid #333; 
+            padding-bottom: 10px; 
+            margin-bottom: 20px; 
+            color:red; 
+        }
+
+        /* h1, h2 {
+            color: #333;
+        } */
 
         .cart_nav_item{
         margin-right: 100px;
@@ -54,7 +65,7 @@
         position: relative;
         top: -20px;
         right: 9px;
-        background-color:red;
+        background-color:white;
         padding:.3px;
         border-style: 90%;
         border-radius: 30%;
@@ -149,7 +160,7 @@
 </head>
 <body>
     <header>
-        <h1>IT Shop</h1>
+        <h2>IT Shop</h2>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -182,7 +193,7 @@
                 <div class="product-item">
                     <img src="images/lenovo-ideapad-new.png" alt="Lenovo Think Book 14">
                     <h3>Lenovo IdeaPad </h3>
-                    <p>1,015,000 MMK</p>
+                    <p>2,799,000 MMK</p>
                     <button onclick="addToCart('Lenovo Think Book 14', 1015000)">Add to Cart</button>
                 </div>
                 <div class="product-item">
@@ -239,7 +250,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Laptops</td>
+                        <td>Laptop</td>
                         <td>Macbook Pro 16 inches (2023)</td>
                         <td>8,450,000 MMK</td>
                         <td class="btn-cell">
@@ -247,7 +258,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Laptops</td>
+                        <td>Laptop</td>
                         <td>Dell XPS 13</td>
                         <td>1,690,000 MMK</td>
                         <td class="btn-cell">
@@ -255,7 +266,24 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Smart Phones</td>
+                        <td>Laptop</td>
+                        <td>Lenovo IdeaPad</td>
+                        <td>2,799,000 MMK</td>
+                        <td class="btn-cell">
+                            <button onclick="addToCart('Macbook Pro 16 inches (2023)', 8450000)">Add to Cart</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Laptop</td>
+                        <td>Acer Aspire 7</td>
+                        <td>3,550,000 MMK</td>
+                        <td class="btn-cell">
+                            <button onclick="addToCart('Macbook Pro 16 inches (2023)', 8450000)">Add to Cart</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Smart Phone</td>
                         <td>iPhone 15 ProMax</td>
                         <td>7,270,000 MMK</td>
                         <td class="btn-cell">
@@ -263,13 +291,30 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Smart Phones</td>
+                        <td>Smart Phone</td>
                         <td>Samsung S24 Ultra</td>
                         <td>6,975,000 MMK</td>
                         <td class="btn-cell">
                             <button onclick="addToCart('Samsung S24 Ultra', 6975000)">Add to Cart</button>
                         </td>
                     </tr>
+                    <tr>
+                        <td>Smart Phone</td>
+                        <td>Sony Xperia 10 IV</td>
+                        <td>2,755,000 MMK</td>
+                        <td class="btn-cell">
+                            <button onclick="addToCart('Samsung S24 Ultra', 6975000)">Add to Cart</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Smart Phones</td>
+                        <td>Google Pixel 8 Pro</td>
+                        <td>2,430,000 MMK</td>
+                        <td class="btn-cell">
+                            <button onclick="addToCart('Samsung S24 Ultra', 6975000)">Add to Cart</button>
+                        </td>
+                    </tr>
+
                 </tbody>
             </table>
         </section>
