@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Shop</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="oldStyles.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,6 +45,21 @@
         h1, h2 {
             color: #333;
         }
+
+        .cart_nav_item{
+        margin-right: 100px;
+        }
+        .cart_noti{
+        position: relative;
+        top: -20px;
+        right: 9px;
+        background-color:red;
+        padding:.3px;
+        border-style: 90%;
+        border-radius: 30%;
+        color: black;
+        }
+
 
         table {
             width: 100%;
@@ -87,6 +104,9 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#laptops">Laptops</a></li>
                 <li><a href="#iphones">Smart Phones</a></li>
+                <li class="cart_nav_item"><i class="fa-solid fa-cart-plus"></i>
+                <span class="cart_noti">6</span>
+    
             </ul>
         </nav>
     </header>
@@ -105,25 +125,25 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="images/Macbookpro.jpg" alt="Laptop 1"></td>
+                        <td><img src="images/macbookPro.png" alt="Laptop 1"></td>
                         <td> Macbook Pro 16 inches (2023)</td>
                         <td>8,450,000 MMK</td>
                         <td><button onclick="addToCart('Laptop 1', 2300000)">Add to Cart</button></td>
                     </tr>
                     <tr>
-                        <td><img src="images/dell.jpg" alt="Laptop 2"></td>
+                        <td><img src="images/dell-xps-new.png" alt="Laptop 2"></td>
                         <td>Dell XPS 13</td>
                         <td>1,690,000 MMK</td>
                         <td><button onclick="addToCart('Laptop 2', 2000000)">Add to Cart</button></td>
                     </tr>
                     <tr>
-                        <td><img src="images/lenovo.avif" alt="Laptop 3"></td>
+                        <td><img src="images/lenovo-ideapad-new.png" alt="Laptop 3"></td>
                         <td>Lenovo Think Book 14</td>
                         <td>1,015,000 MMK</td>
                         <td><button onclick="addToCart('Laptop 3', 1900000)">Add to Cart</button></td>
                     </tr>
                     <tr>
-                        <td><img src="images/acer.jpg" alt="Laptop 4"></td>
+                        <td><img src="images/acer-aspire7.png" alt="Laptop 4"></td>
                         <td>Acer Aspire 5</td>
                         <td>799,000 MMK</td>
                         <td><button onclick="addToCart('Laptop 4', 1850000)">Add to Cart</button></td>
