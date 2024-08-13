@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Shop</title>
+    <title>Tech Shop</title>
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
 
@@ -161,7 +161,7 @@
 </head>
 <body>
     <header>
-        <h2>IT Shop</h2>
+        <h2>Tech Shop</h2>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -183,13 +183,13 @@
                     <img src="images/macbookPro.png" alt="Macbook Pro 16 inches (2023)">
                     <h3>Macbook Pro 16 inches (2023)</h3>
                     <p>8,450,000 MMK</p>
-                    <button onclick="addToCart('Macbook Pro 16 inches (2023)', 8450000)">Add to Cart</button>
+                    <button onclick="addToCart('Macbook Pro 16 inches (2023)', 8450000)" class="addToCart" data-id="1" data-name="Macbook Pro 16 inches(2023)" data-price="8,450,000">Add to Cart</button>
                 </div>
                 <div class="product-item">
                     <img src="images/dell-xps-new.png" alt="Dell XPS 13">
                     <h3>Dell XPS 13</h3>
                     <p>1,690,000 MMK</p>
-                    <button onclick="addToCart('Dell XPS 13', 1690000)">Add to Cart</button>
+                    <button onclick="addToCart('Dell XPS 13', 1690000)" class="addToCart" data-id="2" data-name="Dell XPS 13" data-price="1,690,000">Add to Cart</button>
                 </div>
                 <div class="product-item">
                     <img src="images/lenovo-ideapad-new.png" alt="Lenovo Think Book 14">
@@ -333,5 +333,8 @@
             console.log(cart);
         }
     </script>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
