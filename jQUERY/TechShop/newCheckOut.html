@@ -70,7 +70,7 @@
         padding:.3px;
         border-style: 90%;
         border-radius: 30%;
-        color: red;
+        color: black;
         }
 
         /* Product Section Styles */
@@ -168,89 +168,29 @@
                 <li><a href="#laptops">Laptops</a></li>
                 <li><a href="#iphones">Smart Phones</a></li>
                 <li class="cart_nav_item"><i class="fa-solid fa-cart-plus"></i>
-                <span class="cart_noti" id="count_item">0</span>
+                <span class="cart_noti">6</span>
         
             </ul>
         </nav>
     </header>
+    <div class="container my-5">
+        <table border="1" cellspacing="0" cellpadding="30">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Item Name</th>
+                    <th>Item price</th>
+                    <th>Qty</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
 
-    <main>
-        <!-- Laptops Section -->
-        <section id="laptops">
-            <h2>Laptops</h2>
-            <div class="product-section">
-                <div class="product-item">
-                    <img src="images/macbookPro.png" alt="Macbook Pro 16 inches (2023)">
-                    <h3>Macbook Pro 16 inches (2023)</h3>
-                    <p>8450000 MMK</p>
-                    <button onclick="addToCart('Macbook Pro 16 inches (2023)', 8450000)" class="addToCart" data-id="1" data-name="Macbook Pro 16 inches(2023)" data-price="8450000">Add to Cart</button>
-                </div>
-                <div class="product-item">
-                    <img src="images/dell-xps-new.png" alt="Dell XPS 13">
-                    <h3>Dell XPS 13</h3>
-                    <p>1690000 MMK</p>
-                    <button onclick="addToCart('Dell XPS 13', 1690000)" class="addToCart" data-id="2" data-name="Dell XPS 13" data-price="1690000">Add to Cart</button>
-                </div>
-                <div class="product-item">
-                    <img src="images/lenovo-ideapad-new.png" alt="Lenovo Think Book 14">
-                    <h3>Lenovo IdeaPad </h3>
-                    <p>2799000 MMK</p>
-                    <button onclick="addToCart('Lenovo Think Book 14', 2799000)">Add to Cart</button>
-                </div>
-                <div class="product-item">
-                    <img src="images/acer-aspire7.png" alt="Acer Aspire 5">
-                    <h3>Acer Aspire 7</h3>
-                    <p>3550000 MMK</p>
-                    <button onclick="addToCart('Acer Aspire 5', 3550000)">Add to Cart</button>
-                </div>
-            </div>
-        </section>
+            </tbody>
 
-        <!-- Smart Phones Section -->
-        <section id="iphones">
-            <h2>Smart Phones</h2>
-            <div class="product-section">
-                <div class="product-item">
-                    <img src="images/iph15ProMax.jpg" alt="iPhone 15 ProMax">
-                    <h3>iPhone 15 ProMax</h3>
-                    <p>7,270,000 MMK</p>
-                    <button onclick="addToCart('iPhone 15 ProMax', 7270000)">Add to Cart</button>
-                </div>
-                <div class="product-item">
-                    <img src="images/S24Ultra.webp" alt="Samsung S24 Ultra">
-                    <h3>Samsung S24 Ultra</h3>
-                    <p>6,975,000 MMK</p>
-                    <button onclick="addToCart('Samsung S24 Ultra', 6975000)">Add to Cart</button>
-                </div>
-                <div class="product-item">
-                    <img src="images/sony2.webp" alt="Sony Xperia 10 IV">
-                    <h3>Sony Xperia 10 IV</h3>
-                    <p>2,755,000 MMK</p>
-                    <button onclick="addToCart('Sony Xperia 10 IV', 2755000)">Add to Cart</button>
-                </div>
-                <div class="product-item">
-                    <img src="images/GooglePixel6Pro.jpg" alt="Google Pixel 8 Pro">
-                    <h3>Google Pixel 8 Pro</h3>
-                    <p>2,430,000 MMK</p>
-                    <button onclick="addToCart('Google Pixel 8 Pro', 2430000)">Add to Cart</button>
-                </div>
-            </div>
-        </section>
+        </table>
 
-
-    <script>
-        let cart = {};
-
-        function addToCart(item, price) {
-            if (cart[item]) {
-                cart[item].quantity += 1;
-            } else {
-                cart[item] = { price: price, quantity: 1 };
-            }
-            console.log(cart);
-        }
-    </script>
-
+    </div>
     <script src="jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
 </body>

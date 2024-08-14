@@ -258,11 +258,11 @@
             const priceCell = button.parentElement.parentElement.querySelector('.item-price');
             const amountCell = button.parentElement.parentElement.querySelector('.item-amount');
             let currentQty = parseInt(input.value, 10);
-            const price = parseFloat(priceCell.textContent.replace(/,/g, '').replace(' MMK', ''));
+            const price = parseFloat(priceCell.textContent.replace(/,/g, '').replace( ''));
             if (currentQty + change >= 0) { // Ensure quantity is positive
                 input.value = currentQty + change;
                 const newAmount = (currentQty + change) * price;
-                amountCell.textContent = newAmount.toLocaleString('en') + ' MMK';
+                amountCell.textContent = newAmount.toLocaleString('en');
                 updateTotal();
             }
         }
@@ -271,14 +271,17 @@
             const amounts = document.querySelectorAll('.item-amount');
             let total = 0;
             amounts.forEach(amount => {
-                total += parseFloat(amount.textContent.replace(/,/g, '').replace(' MMK', ''));
+                total += parseFloat(amount.textContent.replace(/,/g, '').replace( ''));
             });
-            document.querySelector('.total-row .currency').textContent = total.toLocaleString('en') + ' MMK';
+            document.querySelector('.total-row .currency').textContent = total.toLocaleString('en');
         }
 
         function placeOrder() {
             alert('Order placed successfully!');
         }
     </script>
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="script.js"></script>
+    
 </body>
 </html>

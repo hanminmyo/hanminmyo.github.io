@@ -1,5 +1,48 @@
 $(document).ready(function(){
 
+    count();
+    getData();
+    function getData() {
+        let itemsString = localStorage.getItem('shops');
+        if(itemsString){
+            let itemsArray = JSON.parse(itemsString);
+            let data = '';
+            let j = 1;
+            let total = 0;
+            $.each(itemsArray, function(i,v){
+                data += `<tr>
+                    <td>${j++}</td>
+                    <td>${v.name}</td>
+                    <td>${v.price}</td>
+                    <td>
+                    <button>-</button>
+                    ${v.qty}
+                    <button>+</button>
+
+                    </td>
+                    <td>${v.price * v.qty}</td>
+                </tr>`
+                total +=  (v.price * v.qty);
+            })
+            data += `<tr>
+                <td colspan="4">Total</td>
+                <td>${total}</td>
+            </tr>`
+            $('#tbody').html(data);
+        }
+    }
+
+    function count(){
+        let itemsString = localStorage.getItem('shops');
+        if(itemsString){
+            let itemsArray = JSON.parse(itemsString);
+            if(itemsArray != 0){
+                let count = itemsArray.length;
+                $('#count_item').text(count)
+            }
+        }
+    }
+
     $('.addToCart').click(function(){
         // alert("hello")
         let id = $(this).data('id');
@@ -34,5 +77,7 @@ $(document).ready(function(){
         }
         let itemsData = JSON.stringify(itemsArray);
         localStorage.setItem('shops',itemsData);
+
+        count(); 
     })
 })
