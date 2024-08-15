@@ -70,7 +70,7 @@
         padding:.3px;
         border-style: 90%;
         border-radius: 30%;
-        color: black;
+        color: red;
         }
 
         /* Product Section Styles */
@@ -157,6 +157,27 @@
         .btn-cell button {
             padding: 0.5rem;
         }
+        .order-button-container {
+            display: flex;
+            margin-top: 1rem; /* Adds space above the button if needed */
+        }
+
+        #order_now {
+            padding: 0.75rem 1.5rem;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            justify-content: center; /* Centers the button horizontally */
+
+        }
+
+        #order_now:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>
@@ -164,9 +185,9 @@
         <h2>Tech Shop</h2>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#laptops">Laptops</a></li>
-                <li><a href="#iphones">Smart Phones</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#laptop">Laptops</a></li>
+                <li><a href="index.html#smartphones">Smart Phones</a></li>
                 <li class="cart_nav_item"><i class="fa-solid fa-cart-plus"></i>
                 <span class="cart_noti" id="count_item"></span>
         
