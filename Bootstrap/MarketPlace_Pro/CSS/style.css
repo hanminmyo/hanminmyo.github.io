@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-container {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Makes first column flexible and second auto-sized */
+    align-items: center; /* Vertically center the content */
+    width: 100%;
+    height: 7vh; /* Adjust height as needed */
+    background-color: #a9a9a926; /* Semi-transparent background */
+}
+
+
+.top-navbar
+{
+    width: 100%;
+    height: 7vh;
+    /* background-color: #a9a9a926; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:space-between;
+}
+.top-icons
+{
+    margin-left: 45px;
+}
+.top-icons i{
+    font-size: 20px;
+    color: #1c1c50;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.other-links{
+    margin-right: 33px;
+}
+.other-links i{
+    color: #1c1c50;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#btn-login{
+    width: 100px;
+    border: 1px solid #1c1c50;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 3ch;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-login a{
+    text-decoration: none;
+    color: #1c1c50;
+    transition: 0.5s ease;
+}
+#btn-login a:hover{
+    background-color:#1c1c50 ;
+    color: white;
+}
+
+#btn-login:hover{
+    background-color:#1c1c50 ;
+    color: white;
+}
+
+#btn-signup{
+    width: 100px;
+    border: 1px solid #1c1c50;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 3ch;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-signup a{
+    text-decoration: none;
+    color: #1c1c50;
+    transition: 0.5s ease;
+}
+#btn-signup a:hover{
+    background-color:#1c1c50 ;
+    color: white;
+}
+
+#btn-signup:hover{
+    background-color:#1c1c50 ;
+    color: white;
+}
+
+.home-link {
+    color: #ff0000; /* Red color for Home */
+}
+
+.clothe-link {
+    color: #00ff00; /* Green color for Clothe */
+}
+
+.category-link {
+    color: #0000ff; /* Blue color for Category */
+}
+
+.about-link {
+    color: #ff00ff; /* Magenta color for About Us */
+}
+
+.contact-link {
+    color: #00ffff; /* Cyan color for Contact Us */
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile L (up to 767px) */
+@media screen and (max-width: 767px) {
+    .top-icons {
+        margin-left: 15px; /* Reduced margin for mobile screens */
+    }
+    .top-icons i {
+        font-size: 16px; /* Slightly smaller icons */
+    }
+
+    .other-links {
+        margin-right: 15px; /* Reduced margin for mobile screens */
+    }
+    .other-links i {
+        font-size: 16px; /* Slightly smaller icons */
+    }
+
+    #btn-login,
+    #btn-signup {
+        width: 80px; /* Adjusted width */
+        height: 3ch; /* Adjusted height */
+        font-size: 14px; /* Adjusted font size */
+    }
+}
+
+/* Mobile M (up to 480px) */
+@media screen and (max-width: 480px) {
+    .top-icons {
+        margin-left: 5px; /* Even smaller margin */
+    }
+    .top-icons i {
+        font-size: 14px; /* Smaller icons for smaller screens */
+    }
+
+    .other-links {
+        margin-right: 5px; /* Even smaller margin */
+    }
+    .other-links i {
+        font-size: 14px; /* Smaller icons for smaller screens */
+    }
+
+    #btn-login,
+    #btn-signup {
+        width: 60px; /* Adjusted width */
+        height: 3ch; /* Adjusted height */
+        font-size: 12px; /* Adjusted font size */
+    }
+}
+
+/* Mobile XS (up to 350px) */
+@media screen and (max-width: 350px) {
+    .top-icons {
+        margin-left: 5px;
+    }
+    .top-icons i {
+        font-size: 12px;
+    }
+
+    .other-links {
+        margin-right: 10px;
+    }
+    .other-links i {
+        font-size: 12px;
+    }
+
+    #btn-login,
+    #btn-signup {
+        width: 50px; /* Adjusted width for very small screens */
+        height: 3vh; /* Adjusted height */
+        font-size: 10px; /* Adjusted font size */
+    }
+}
+  /* home section  */
+  .home-section{
+    width: 100%;
+    height: 93vh;
+    background-color: #a9a9a926;
+  }
+/* nav bar */
+#nav-bar{
+    background-color: #1c1c50;
+    font-size: 16px;
+    font-family: 'Roboto Slab',serif;
+}
+.navbar-brand {
+    color: white !important; /* Force color to be white */
+}
+.navbar-brand .logo {
+    margin-right: 10px; /* Adjust the value as needed */
+}
+
+
+#nav-bar .nav-link{
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: 0.5s ease;
+}
+#nav-bar .nav-link:hover{
+    color: white;
+    border-radius: 5px;
+}
+.dropdown li a{
+    color: white;
+}
+.search-btn{
+    color: white;
+    border: 1px solid white;
+}
+.search-btn:hover{
+    background-color: #1c1c50;
+}
+/* nav bar */
+/* home content */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    font-family: 'Roboto Slab',serif;
+}
+.home .img{
+    flex: 1 1 400px;
+}
+.home .img img{
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-top: 30px;
+}
+.content h3{
+    margin-left: 70px;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: #1c1c50;
+    font-weight: bold;
+}
+.content h3 span{
+    font-size: 40px;
+}
+.content p{
+    margin-left: 70px;
+    color: #1c1c50;
+}
+.content #shopnow{
+    margin-left: 70px;
+    width: 200px;
+    height: 38px;
+    border: 2px solid #1c1c50;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.content #shopnow:hover{
+    background-color:#1c1c50;
+    color:white;
+}
+@media screen and (max-width:800px){
+    .content h3{
+        margin-left: 50px;
+        font-size: 40px;
+    }
+    .content p{
+        margin-left: 50px;
+    }
+    .content #shopnow{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:570px){
+    .content h3{
+        margin-left: 20px;
+    }
+    .content p{
+        margin-left: 20px;
+    }
+    .content #shopnow{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width:799px){
+    .home-section{
+        height: 150vh;
+    }
+}
+@media screen and (max-width:550px){
+    .home-section{
+        height: 100vh;
+    }
+}
+/* home content */
+/* home section  */
+
+/* top cards */
+#top-cards{
+    margin-top: 30px;
+    font-family: 'Roboto Slab', serif;
+    }
+#top-cards .card img{
+    height: 60vh;
+    }
+#top-cards h5{
+    color: #1c1c50;
+    font-weight: bold;
+    }
+#top-cards button{
+    width: 150px;
+    height: 33px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background: transparent;
+    color: #1c1c50;
+    border: 2px solid #1c1c50;
+    transition: 0.5s ease;
+    cursor: pointer;
+    }
+#top-cards button:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+/* top cards */
+
+
+
+
+

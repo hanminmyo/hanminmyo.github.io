@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace Pro</title>
+    <link rel="icon" href="images/market-pro-logo-01.png">
+
+    <link rel="stylesheet" href="images/market-pro-logo-01.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- bootstrap links -->
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"> <!-- font links -->
+
+
+</head>
+
+<body>
+
+    <!-- Top Nav Bar -->
+    <div class="navbar-container">
+        <div class="top-navbar">
+            <div class="top-icons">
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        <div class="other-links">
+            <button id="btn-login"><a href="login.html">Login</a></button>
+            <button id="btn-signup"><a href="signup.html">Sign Up</a></button>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+    <div class="home-section">
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg" id="nav-bar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/market-pro-logo-01.png" alt="" width="50px" class="logo">
+                    Online Shops</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link home-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link clothe-link" href="clothe.html">Clothe</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link category-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: #1c1c50;">
+                                <li><a class="dropdown-item" href="#">T-Shirt</a></li>
+                                <li><a class="dropdown-item" href="#">Hoodies</a></li>
+                                <li><a class="dropdown-item" href="#">Pants</a></li>
+                                <li><a class="dropdown-item" href="#">Sports Shoes</a></li>
+                                <li><a class="dropdown-item" href="#">Smart Watch</a></li>
+                                <li><a class="dropdown-item" href="#">Glasses</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link about-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contact-link" href="contact.html">Coutact Us</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- nav bar -->
+
+
+
+        <!-- home content -->
+        <section class="home">
+            <div class="content">
+                <h3>Biggest Clothe Sale
+                    <br> <span>Up to 50% Off</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ipsum a delectus facere </p>
+                <button id="shopnow">Shop Now</button>
+            </div>
+            <div class="img">
+                <img src="images/sport-shoe-02.png" alt="">
+            </div>
+        </section>
+        <!-- home content -->
+    </div>
+
+<!-- top cards -->
+<div class="container" id="top-cards">
+    <div class="row">
+        <div class="col-md-5 py-3 py-md-0">
+            <div class="card" style="background-color: #a9a9a926;">
+                <img src="images/iwatch.jpg" alt="">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Smart Watch</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit architecto ad autem</p>
+                    <p><strong>$200.30 <strike>250.10</strike></strong></p>
+                    <button>order now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card" style="background-color: #a9a9a926;">
+                <img src="images/man-shoe-02.webp" alt="">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Skecher Shoe</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit architecto ad autem</p>
+                    <p><strong>$150.10 <strike>200.10</strike></strong></p>
+                    <button>order now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card" style="background-color: #a9a9a926;">
+                <img src="images/smart-luggage.png" alt="">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Luggage Scooter</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit architecto ad autem</p>
+                    <p><strong>$450 <strike>600</strike></strong></p>
+                    <button>order now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- top cards -->
+
+
+
+
+
+
+
+
+
+
+    <script src="plugin/jquery.min.js"></script>
+    <script src="plugin/slick.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+</body>
+
+</html>
