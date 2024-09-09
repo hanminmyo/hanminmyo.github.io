@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace Pro</title>
+    <link rel="icon" href="images/market-pro-logo-01.png">
+
+    <link rel="stylesheet" href="images/market-pro-logo-01.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- bootstrap links -->
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"> 
+    <!-- font links -->
+    </head>
+
+<body>
+    <!-- Top Nav Bar -->
+    <div class="navbar-container">
+        <div class="top-navbar">
+            <div class="top-icons">
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        <div class="other-links">
+            <button id="btn-login"><a href="login.html">Login</a></button>
+            <button id="btn-signup"><a href="signup.html">Sign Up</a></button>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg" id="nav-bar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/market-pro-logo-01.png" alt="" width="50px" class="logo">
+                    Online Shops</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link home-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link clothe-link" href="clothe.html">Flash Sale</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link category-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: #1c1c50;">
+                                <li><a class="dropdown-item" href="#">Clothin,Shoes & Sun Glasses</a></li>
+                                <li><a class="dropdown-item" href="#">Computers & Accessories</a></li>
+                                <li><a class="dropdown-item" href="#">Sports & Outdoors</a></li>
+                                <li><a class="dropdown-item" href="#">Kitchen & Dinings</a></li>
+                                <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link about-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contact-link" href="contact.html">Coutact Us</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- nav bar -->
+
+
+<!-- banner -->
+    <div class="banner2">
+        <div class="content2">
+            <h1>Get More Product</h1>
+            <p> We Prepare our sales and services with the best prices for customers services</p>
+            <!-- <div id="bannerbtn2"><button>SHOP NOW</button></div> -->
+        </div>
+    </div>
+<!-- banner -->
+
+<!-- product cards -->
+<div class="container" id="product-cards">
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card-clothe">
+                <img src="images/girl-heel-01.jpg" alt="">
+                <div class="card-body">
+                    <h4>High heel</h4>
+                    <p>Fashion Casual High Heel Scandals</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>                       
+                    </div>
+                    <h5>$39.99 <strike>$50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card-clothe">
+                <img src="images/men-golf-puma-sport-shirt.avif" alt="">
+                <div class="card-body">
+                    <h4>Puma Sportshirt</h4>                        
+                    <p>Graphics Years of Sports Men Tee
+                    </p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>                       
+                    </div>
+                    <h5>85 <strike>$99</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card-clothe">
+                <img src="images/golf-watch.webp" alt="">
+                <div class="card-body">
+                    <h4>Smart Watch</h4>                       
+                    <p>Sporty spirit is expressed in a special editi on designed </p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>                       
+                    </div>
+                    <h5>$455 <strike>$499</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card-clothe">
+                <img src="images/men-shot-pant.jpg" alt="">
+                <div class="card-body">
+                    <h4>Shot Pants</h4>
+                    <p>Casual Shot Pant With Slim Fit</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>                       
+                    </div>
+                    <h5>$25 <strike>$39</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card-clothe">
+                <img src="images/man-wallet-01.jpg" alt="">
+                <div class="card-body">
+                    <h4>Men Wallet</h4>
+                    <p>Slim Leather Wallet with Blocking Card Holder</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>                       
+                    </div>
+                    <h5>$12.99 <strike>$14.99</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card-clothe">
+                <img src="images/sun-glasses-men.jpg" alt="">
+                <div class="card-body">
+                    <h4>Police Sun Glasses</h4>
+                    <p>Choose from a wide range of designer for men</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>                       
+                    </div>
+                    <h5>$35 <strike>$39.99</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card-clothe">
+                <img src="images/women-leather-boot.avif" alt="">
+                <div class="card-body">
+                    <h4>Leather Boot</h4>
+                    <p>Homemade Genuine Leather Ankle Boots for Lady Casual Shoe
+                    </p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>                       
+                    </div>
+                    <h5>$135 <strike>$150</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card-clothe">
+                <img src="images/women-leather-bag.jpeg" alt="">
+                <div class="card-body">
+                    <h4>Women Leather Bag</h4>
+                    <p>Stylish and Genuine Leather Special Designed</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>                       
+                    </div>
+                    <h5>110 <strike>$170</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card-clothe">
+                <img src="images/open-ear-head-phone.jpg" alt="">
+                <div class="card-body">
+                    <h4>Open Ear Headphones</h4>
+                    <p>bluetooth 5.4 wireless Earbuds built in Mic</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>                       
+                    </div>
+                    <h5>$35 <strike>$39.99</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card-clothe">
+                <img src="images/projector-01.jpg" alt="">
+                <div class="card-body">
+                    <h4>Projector</h4>
+                    <p>1080P synchronize smart phone screen by wifi/usb cable for home entertainment</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>                       
+                    </div>
+                    <h5>$89.99 <strike>$99.99</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card-clothe">
+                <img src="images/car-play-touch-screen.jpg" alt="">
+                <div class="card-body">
+                    <h4>Carplay and Android Auto Touch Screen</h4>
+                    <p>wireless car steerio with 4k dash camera, 1080P Back Camera</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>                       
+                    </div>
+                    <h5>$139.99 <strike>$159.99</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card-clothe">
+                <img src="images/bluetooth-speaker.jpg" alt="">
+                <div class="card-body">
+                    <h4>Bluetooth Speaker</h4>
+                    <p>Speaker with HD Sound, portable wireless, IPX5 waterproof</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>                       
+                    </div>
+                    <h5>$26.99 <strike>$45.99</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- product cards -->
+
+<!-- products -->
+ <div class="container" style="margin-top: 100px;">
+ <hr>
+</div>
+<div class="container">
+    <h3 style="font-weight: bold;">PRODUCT</h3>
+    <p>Shop with us and find everything you need. The ultimate online shopping experience Shop for quality, shop for
+        style We make ecommerce fast and easy. Trust us for unbeatable prices. Discover a better way to shop Shop
+        with us and get the best. Everything you need at your fingertips Your one-stop-shop Shop smarter, shop here.
+        We make ecommerce shopping stress-free. Unlock the power of online shopping. Shop hassle-free and save
+        money. We've got you covered. Shop securely with us. Shop online and get it delivered. Shop with us and get
+        the best value. Find the perfect products for you. Shop online for unbeatable prices. Online shopping made
+        easy We've got your online shopping needs covered. Shop with us and save time.</p>
+    <hr>
+</div>
+<!-- products -->
+
+<!-- offer -->
+<div class="container my-5" id="offer">
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="offer-card">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h5>Free Shipping</h5>
+                <p>On Order over $100</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="offer-card">
+                <i class="fa-solid fa-truck"></i>
+                <h5>Fast Delivery</h5>
+                <p>World Wide</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="offer-card">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <h5>Big Choice</h5>
+                <p>Of product</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- offer -->
+
+    <!-- footer -->
+    <footer id="footer" style="margin-top: 50px;">
+        <div class="footer-top">
+            <div class="container footer-section">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-content">
+                        <h3>Get to Know Us</h3>
+                        <p>Stay Home And Shop Online.You Too Pretty With Shopping Makes Everything Better From Us </p>
+                        <p>
+                            Yangon <br>
+                            Mandalay <br>
+                            Naypyidaw <br>
+                        </p>
+                        <strong><i class="fa-solid fa-phone"></i>Phone:
+                            <strong>+959 12345678900</strong></strong><br>
+                        <strong><i class="fa-solid fa-envelope"></i>Email:
+                            <strong>marketplacepro@gmail.com</strong></strong>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <p>Our Greatest Assets Is The Costomers</p>
+                        <ul>
+                            <li><a href="#">Your Account</a></li>
+                            <li><a href="#">Your Order</a></li>
+                            <li><a href="#">Return and Replacement</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Social Network</h4>
+                        <p>Our Sales and Services Items Updated always in Social Networks</p>
+                        <div class="social-links mt-3">
+                            <a href="" class="X-twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="" class="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                            <a href="" class="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="" class="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container footer-bottom">
+            <div class="copyright">
+                &copy; 2024 <strong>Fashion</strong>. Reserved rights. | <a href="/terms">Terms</a> | <a href="/privacy">Privacy Policy</a>            </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+    <a href="#" class="arrow"><i><img src="images/up-arrow-double.png" alt="" width="50px"></i></a>
+    <script src="plugin/jquery.min.js"></script>
+    <script src="plugin/slick.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+</body>
+</html>

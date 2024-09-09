@@ -271,6 +271,7 @@
     background-color:#1c1c50;
     color:white;
 }
+
 @media screen and (max-width:800px){
     .content h3{
         margin-left: 50px;
@@ -334,9 +335,645 @@
     background-color: #1c1c50;
     color: white;
 }
+/* Default grayscale effect */
+.card-img-wrapper img {
+    transition: filter 0.3s ease; 
+}
+
+
+
+
 /* top cards */
+/* banner */
+.banner{
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/banner-img-03.jpg) ;
+}
+.banner .content{
+    text-align: center;
+    padding-top: 100px;
+}
+.banner .content h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+}
+.banner .content p{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+}
+#bannerbtn button{
+    width: 150px;
+    height: 38px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#bannerbtn button:hover{
+    background-color: #1c1c50;
+    border: none;
+}
+/* banner */
+
+/* banner2 */
+.banner2{
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+    background-color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/banner-for-cloth-background-01.avif) ;
+}
+.banner2 .content2{
+    text-align: center;
+    padding-top: 100px;
+}
+.banner2 .content2 h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+}
+.banner2 .content2 p{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+}
+#bannerbtn2 button{
+    width: 150px;
+    height: 38px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#bannerbtn2 button:hover{
+    background-color: #1c1c50;
+    border: none;
+}
+/* banner2 */
+
+/*------------------------- product cards --------------------*/
+#product-cards{
+    font-family: 'Roboto Slab', serif;
+    margin-top: 100px;
+}
+#product-cards .card{
+    box-shadow:rgba(100,100,111,0.2)0px 7px 29px 0px;
+}
+/* ----------------- */
+.card-img {
+    width: 100%; /* Make the image fill the width of its container */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Crop the image to fit the container */
+}
+
+/* -------------------- */
+
+/* ----card-clothe---- */
+/* Ensuring the card-clothe class has a consistent look */
+/* Card container styling */
+.card-clothe {
+    border: none;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: #fff; /* Optional: ensures background color */
+    border-radius: 8px;     /* Optional: adds rounded corners */
+    display: flex;          /* Ensures flexible box layout */
+    flex-direction: column; /* Aligns content vertically */
+    height: 100%;           /* Makes sure the card takes full height of its container */
+}
+
+/* Responsive image styling */
+.card-clothe img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effects */
+.card-clothe:hover img {
+    filter: grayscale(30%);
+    transform: scale(1.05);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .card-clothe {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .card-clothe {
+        padding: 8px; /* Further adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-clothe {
+        padding: 5px; /* Minimal padding for very small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .card-clothe {
+        padding: 5px; /* Ensure consistency on extra small screens */
+        /* Additional adjustments as needed */
+    }
+}
+/* ----card-clothe---- */
 
 
+#product-cards h1{
+    margin-top: 30px;
+    color: #1c1c50;
+    text-shadow: 1px 1px 1px black;
+}
+#product-cards h4{
+    letter-spacing: 3px;
+    color: #1c1c50;
+    text-shadow: 0px 1px 1px black;
+    /* font-weight: bold; */
+}
+#product-cards h5 span{
+    float: right;
+    color: #1c1c50;
+    cursor: pointer;
+}
+
+/* for cart hovering color orange */
+.fa-cart-shopping {
+    transition: color 0.3s ease; 
+}
+.fa-truck:hover{
+    color: green;
+}
+.fa-thumbs-up:hover{
+    color: green;
+}
+/* Change the color to orange on hover */
+
+.fa-cart-shopping:hover {
+    color: green; /* Color changes to orange on hover */
+}
+/* for cart hovering color orange */
 
 
+/*-------------- for hovering section------------- */
+.card {
+    border: none;
+    overflow: hidden; 
+    position: relative; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.card img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    transition: filter 0.3s ease, transform 0.3s ease; 
+}
 
+.card:hover img {
+    filter: grayscale(30%); 
+    transform: scale(1.05); 
+}
+
+.card-body {
+    padding: 15px;
+}
+
+@media (max-width: 767.98px) { 
+    .card {
+        margin-bottom: 15px; 
+    }
+}
+/*-------------for hovering section-------------------------*/
+
+.star{
+    color: orange;
+}
+/* view more for product */
+/* Container to center the button */
+.button-container {
+    text-align: center; /* Centers the button horizontally */
+    margin-top: 20px; /* Adds space above the container to move the button down */
+}
+
+/* Styling for the button */
+/* for viewmorebtn */
+#viewmorebtn button{
+    width: 150px;
+    height: 38px;
+    font-weight: bold;
+    background: transparent;
+    color: #1c1c50;
+    border: 2px solid #1c1c50;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#viewmorebtn button:hover{
+    color: white;
+    background-color: #1c1c50;
+    border: none;
+}
+/* for viewmorebtn */
+/*------------------------- product cards --------------------*/
+
+/* offer */
+/* #offer{
+    margin-top: 50px;
+}
+#offer i{
+    font-size: 60px;
+    color: #1c1c50;
+    font-weight: bold;
+} */
+
+/* Styles for the offer section */
+#offer {
+    padding: 40px 0; /* Top and bottom padding */
+    background: #f0f2f5; /* Light background color for the section */
+}
+
+/* Styles for offer cards */
+.offer-card {
+    background: linear-gradient(135deg, #0099cc, #000000); /* Pacific Blue to Black gradient */    
+    border-radius: 15px; /* More rounded corners */
+    padding: 30px; /* Increased padding inside card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Larger shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    text-align: center; /* Center text */
+    color: #fff; /* White text color */
+}
+
+.offer-card i {
+    font-size: 3.5rem; /* Slightly larger icon */
+    margin-bottom: 15px; /* Space between icon and text */
+    transition: color 0.3s; /* Smooth color transition */
+    color: white;
+}
+
+.offer-card h5 {
+    font-size: 1.5rem; /* Larger font size */
+    margin-bottom: 10px; /* Space below the heading */
+    font-weight: 600; /* Bold heading */
+}
+
+.offer-card p {
+    font-size: 1rem; /* Slightly larger font size */
+    color: #e0e0e0; /* Light gray text color */
+}
+
+/* Hover effects */
+.offer-card:hover {
+    transform: translateY(-10px); /* Lift card higher on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Increase shadow on hover */
+}
+
+/* Icon hover color change */
+.offer-card:hover i {
+    color:  #1c1c50 /* Change icon color on hover */
+}
+
+/* offer */
+
+/* footer */
+#footer {
+    padding: 0 0 30px 0;
+    color: #d0d0d0;
+    font-size: 14px;
+    background:#1c1c50;
+    font-family: 'Roboto Slab', serif;
+}
+#footer .footer-top{
+    padding: 60px 0 30px;
+    background:#1c1c50;
+    color: white
+}
+#footer .footer-top.footer-contact h3{
+    color: white;
+    text-shadow: 1px 1px 1px black
+}
+#footer .footer-top.footer-contact h4{
+    font-size: 22px;
+    margin: 0 0 300px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top.footer-contact p{
+    font-size: 14px;
+    margin: 0;
+    color: white;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-top.footer-links ul li{
+    padding-right: 10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top.footer-links ul li:first-child{
+    padding:0;
+}
+#footer .footer-top.footer-links ul li a{
+    color: white;
+    line-height: 2;
+}
+#footer .footer-top .socail-links a{
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+    line-height: 1;
+    padding-right: 4px;
+    border-radius: 50px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.5s ease;
+}
+#footer.copyright{
+    text-align: center;
+    float: left;
+}
+    #footer.credits{
+    float: right;
+    text-align: center;
+}
+/* General footer styling */
+#footer {
+    padding: 0 0 30px 0;
+    color: #d0d0d0;
+    font-size: 14px;
+    background: #1c1c50;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Footer top section */
+#footer .footer-top {
+    padding: 60px 0 30px;
+    background: #1c1c50;
+    color: white;
+}
+
+/* Footer contact headings */
+#footer .footer-top.footer-contact h3 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+#footer .footer-top.footer-contact h4 {
+    font-size: 22px;
+    margin: 0 0 30px 0; /* Adjust margin as needed */
+    padding: 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+
+#footer .footer-top.footer-contact p {
+    font-size: 14px;
+    margin: 0;
+    color: white;
+    line-height: 1;
+    font-weight: 700;
+}
+
+/* Footer links section */
+#footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top.footer-links ul li {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-top.footer-links ul li:first-child {
+    padding: 0;
+}
+
+#footer .footer-top.footer-links ul li a {
+    color: white;
+    line-height: 2;
+}
+
+#footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+    line-height: 1;
+    padding-right: 4px;
+    border-radius: 50px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.5s ease;
+}
+
+/* Center copyright text */
+#footer .footer-bottom {
+    text-align: center;
+    padding: 4px 0; /* Adjust padding as needed */
+    background-color: #1c1c50; /* Same background color for consistency */
+}
+
+#footer .footer-bottom .copyright {
+    margin: 0;
+    color: #d0d0d0; /* Match color with footer text color */
+    font-size: 14px; /* Match font size with other text in footer */
+}
+/* footer */
+
+html{
+        scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    background-color: #1c1c50;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    align-items: center;
+    line-height: 50px;
+}
+/* login */
+.login-section{
+    width: 50%;
+    margin: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+#side1{
+    background-color: #1c1c50;
+    height: 76vh;
+    border-radius: 5px;
+    box-shadow:rgba(100,100,111,0.2)0px 7px 29px 0px;
+}   
+#side1 h3{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+}
+#side1 p{
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+}
+#btn{
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#btn a{
+    text-decoration: none;
+    color: white;
+}
+#side2{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    align-items: center;
+    text-align: center;
+}
+#side2 h3{
+    margin-top: 50px;
+    color: #1c1c50;
+    font-weight: bold;
+}
+#side2 .inp{
+    margin-top: 32px;
+}
+#side2 input{
+    width: 500px;
+    height: 36px;
+    align-items: center;
+}
+#side2 p{
+    margin-top: 20px;
+    cursor: pointer;
+}
+#side2 .icons i{
+    margin-left: 10px;
+    cursor: pointer;
+}
+#login{
+    margin-top: 10px;
+}
+#login button{
+    width: 200px;
+    height: 32px;
+    color: white;
+    background-color: #1c1c50;
+    border: none;
+    font-weight: bold;
+}
+@media screen and (max-width:992px){
+    #side2 input{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 330x) {
+        #side2 input{
+    width: 200px;
+    }
+}
+/* login */
+
+/* about */
+#about{
+    margin-top: 50px;
+}
+#about h1{
+    text-align: center;
+    font-weight: bold;
+    color: #1c1c50;
+}
+/* about */
+
+/* contact */
+#contact{
+    margin-top: 50px;
+}
+#contact h1{
+    color: #1c1c50;
+    text-shadow: 0px 0px 1px black;
+}
+#contact.card{
+    height: 80px;
+    margin-top: 20px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+#contact.card i{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #1c1c50;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+#contact .card h6{
+    margin-left: 10px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #1c1c50;
+}
+#messagebtn button{
+    margin-top: 30px;
+    width: 200px;
+    height: 33px;
+    background: transparent;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+}
+#messagebtn button:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+
+/* contact */
