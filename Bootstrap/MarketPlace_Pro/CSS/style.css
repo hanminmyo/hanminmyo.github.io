@@ -497,6 +497,27 @@
     color: #1c1c50;
     text-shadow: 1px 1px 1px black;
 }
+
+/* -------------*/
+/* CSS to style the h1 headings */
+h1.text-center {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    color: #333; /* Dark gray color for the text */
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    font-weight: bold; /* Make the font bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    margin: 20px 0; /* Adjust margin for spacing */
+    padding: 10px; /* Add some padding for better spacing */
+    border-bottom: 3px solid #f39c12; /* Add a bottom border with color */
+    display: inline-block; /* Make sure the border fits around the text */
+    background: linear-gradient(135deg, #f1c40f, #f39c12); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
+    text-align: center; /* Center the text */
+    text-transform: uppercase; /* Transform text to uppercase */
+}
+/* -------------- */
+
 #product-cards h4{
     letter-spacing: 3px;
     color: #1c1c50;
