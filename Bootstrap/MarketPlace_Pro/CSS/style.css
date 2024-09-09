@@ -386,7 +386,7 @@
     height: 50vh;
     margin-top: 50px;
     background-color: white;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/banner-for-cloth-background-01.avif) ;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/banner-03.jpg) ;
 }
 .banner2 .content2{
     text-align: center;
