@@ -23,98 +23,100 @@
 </head>
 
 <body>
-    <!-- Top Nav Bar -->
-    <div class="navbar-container">
-        <div class="top-navbar">
-            <div class="top-icons">
-                <i class="fa-brands fa-square-x-twitter"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-pinterest"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
-            </div>
-        </div>
-        <div class="other-links">
-            <button id="btn-login"><a href="login.html">Login</a></button>
-            <button id="btn-signup"><a href="signup.html">Sign Up</a></button>
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
+<!-- top nav bar start -->
+<div class="top-navbar container-fluid d-flex align-items-center justify-content-between py-3 bg-secondary">
+    <div class="top-icons d-flex align-items-center ms-3 ms-md-5">
+        <i class="fa-brands fa-square-x-twitter me-2"></i>
+        <i class="fa-brands fa-facebook me-2"></i>
+        <i class="fa-brands fa-instagram"></i>
     </div>
-    <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg" id="nav-bar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/market-pro-logo-01.png" alt="" width="50px" class="logo">
-                Online Shops</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link home-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link clothe-link" href="clothe.html">Flash Sale</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link category-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Category
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
-                        style="background-color: #1c1c50;">
-                        <li><a class="dropdown-item" href="#">Clothin,Shoes & Sun Glasses</a></li>
-                        <li><a class="dropdown-item" href="#">Computers & Accessories</a></li>
-                        <li><a class="dropdown-item" href="#">Sports & Outdoors</a></li>
-                        <li><a class="dropdown-item" href="#">Kitchen & Dinings</a></li>
-                        <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
-                    </ul>
-            </li>
-                    <li class="nav-item">
-                        <a class="nav-link about-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link contact-link" href="contact.html">Coutact Us</a>
-                    </li>
+    <div class="other-links d-flex align-items-center me-2 me-md-5">
+        <a href="login.html" class="btn btn-outline-dark me-2 text-light" id="btn-login">Login</a>
+        <a href="signup.html" class="btn btn-outline-dark text-light" id="btn-signup">Sign Up</a>
+        <i class="fa-solid fa-user-tie ms-2"></i>
+        <i class="fa-solid fa-cart-plus ms-2"></i>
+    </div>
+</div>
+<!-- top nav bar end -->
+<!-- Navigation bar Start -->
+        <div class="home-section">
+        <nav class="navbar navbar-expand-lg" id="nav-bar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/market-pro-logo-01.png" alt="" width="50px" class="logo">
+                    Online Shops</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link home-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link clothe-link" href="clothe.html">Flash Sale</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link category-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: #1c1c50;">
+                                <li><a class="dropdown-item" href="#">Clothin Shoes & Sun Glasses</a></li>
+                                <li><a class="dropdown-item" href="#">Computers & Accessories</a></li>
+                                <li><a class="dropdown-item" href="#">Sports & Outdoors</a></li>
+                                <li><a class="dropdown-item" href="#">Kitchen & Dinings</a></li>
+                                <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
+                                <li><a class="dropdown-item" href="#">Best Sellers in Books</a></li>
 
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
-                </form>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link about-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contact-link" href="contact.html">Coutact Us</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit" id="search-btn">search</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- nav bar -->
+        </nav>
+        <!-- Navigation bar End -->
     <!-- contact -->
     <div class="container" id="contact">
         <h1 class="text-center">CONTACT US</h1>
         <div class="row" style="margin-top: 50px;">
             <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fa-solid fa-square-phone-flip">Phone</i>
-                    <h6>+000000000000000000</h6>
+                <div class="card text-center">
+                    <i class="fa-solid fa-square-phone-flip"> Phone</i>
+                    <h6 class="text-center">+959966695119</h6> <!-- Centered text -->
                 </div>
             </div>
             <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fa-regular fa-envelope">Email</i>
-                    <h6>example@gmail.com</h6>
+                <div class="card text-center">
+                    <i class="fa-regular fa-envelope"> Email</i>
+                    <h6 class="text-center">marketplacepro@gmail.com</h6> <!-- Centered text -->
                 </div>
             </div>
             <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
+                <div class="card text-center">
                     <i class="fa-solid fa-map-location-dot"></i>
-                    <h6>Lanmadaw Tsp,Yangon,Myanmar</h6>
+                    <h6 class="text-center">Lanmadaw Tsp, Yangon, Myanmar</h6> <!-- Centered text -->
                 </div>
             </div>
         </div>
     </div>
-    <div class="row" style="margin-top: 30px;">
+    
+
+    <!-- <div class="row" style="margin-top: 30px;">
         <div class="col-md-4 py-3 py-md-0">
             <input type="text" class="form-control form-control" placeholder="Name">
         </div>
@@ -128,7 +130,25 @@
             <textarea class="form-control" id="" rows="5" placeholder="Message" ></textarea>
         </div>
         <div id="messagebtn" class="text-center"><button>Message</button></div>
+    </div> -->
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+            <input type="text" class="form-control form-control-sm" placeholder="Name"> <!-- Small input -->
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <input type="text" class="form-control form-control-sm" placeholder="Email"> <!-- Small input -->
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <input type="number" class="form-control form-control-sm" placeholder="Phone"> <!-- Small input -->
+        </div>
+        <div class="form-group col-12" style="margin-top: 30px;">
+            <textarea class="form-control form-control-sm" rows="5" placeholder="Message"></textarea> <!-- Small textarea -->
+        </div>
+        <div id="messagebtn" class="text-center" style="margin-top: 15px;">
+            <button class="btn btn-primary btn-sm">Message</button> <!-- Small button -->
+        </div>
     </div>
+    
 <!-- contact -->
 
 
@@ -191,7 +211,6 @@
         </div>
     </footer>
     <!-- footer -->
-    <a href="#" class="arrow"><i><img src="images/up-arrow-double.png" alt="" width="50px"></i></a>
     <script src="plugin/jquery.min.js"></script>
     <script src="plugin/slick.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -7,38 +7,45 @@
     <title>MarketPlace Pro</title>
     <link rel="icon" href="images/market-pro-logo-01.png">
 
+    <link rel="stylesheet" href="images/market-pro-logo-01.png">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <!-- bootstrap links -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- bootstrap links -->
     <!-- font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font links -->
 </head>
 
 <body>
-    <!-- Top Nav Bar -->
-    <div class="navbar-container">
-        <div class="top-navbar">
-            <div class="top-icons">
-                <i class="fa-brands fa-square-x-twitter"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-pinterest"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
-            </div>
-        </div>
-        <div class="other-links">
-            <button id="btn-login"><a href="login.html">Login</a></button>
-            <button id="btn-signup"><a href="signup.html">Sign Up</a></button>
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
+<!-- top nav bar start -->
+ <div class="top-navbar container-fluid d-flex align-items-center justify-content-between py-3 bg-secondary">
+    <div class="top-icons d-flex align-items-center ms-3 ms-md-5">
+        <i class="fa-brands fa-square-x-twitter me-2"></i>
+        <i class="fa-brands fa-facebook me-2"></i>
+        <i class="fa-brands fa-instagram"></i>
     </div>
-        <!-- nav bar -->
+    <!-- <div class="other-links d-flex align-items-center me-2 me-md-5">
+        <button id="btn-login" class="btn btn-outline-dark me-2 text-light"><a href="login.html"></a>Login</button>
+        <button id="btn-signup" class="btn btn-outline-dark text-light"><a href="signup.html"></a>Sign Up</button>
+        <i class="fa-solid fa-user-tie ms-2"></i>
+        <i class="fa-solid fa-cart-plus ms-2"></i>
+    </div> -->
+    <div class="other-links d-flex align-items-center me-2 me-md-5">
+        <a href="login.html" class="btn btn-outline-dark me-2 text-light" id="btn-login">Login</a>
+        <a href="signup.html" class="btn btn-outline-dark text-light" id="btn-signup">Sign Up</a>
+        <i class="fa-solid fa-user-tie ms-2"></i>
+        <i class="fa-solid fa-cart-plus ms-2"></i>
+    </div>
+</div>
+<!-- top nav bar end -->
+<!-- Navigation bar Start -->
+        <div class="home-section">
         <nav class="navbar navbar-expand-lg" id="nav-bar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -64,19 +71,22 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
                                 style="background-color: #1c1c50;">
-                                <li><a class="dropdown-item" href="#">Clothin,Shoes & Sun Glasses</a></li>
+                                <li><a class="dropdown-item" href="#">Clothin Shoes & Sun Glasses</a></li>
                                 <li><a class="dropdown-item" href="#">Computers & Accessories</a></li>
                                 <li><a class="dropdown-item" href="#">Sports & Outdoors</a></li>
                                 <li><a class="dropdown-item" href="#">Kitchen & Dinings</a></li>
                                 <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
+                                <li><a class="dropdown-item" href="#">Best Sellers in Books</a></li>
+
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link about-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link contact-link" href="contact.html">Contact Us</a>
+                            <a class="nav-link contact-link" href="contact.html">Coutact Us</a>
                         </li>
+
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -85,7 +95,7 @@
                 </div>
             </div>
         </nav>
-        <!-- nav bar -->
+        <!-- Navigation bar End -->
         <!-- login -->
         <div class="container login-section">
             <div class="row">
@@ -97,11 +107,11 @@
                 <div class="col-md-8" id="side2">
                     <h3>Create Account</h3>
                     <div class="inp">
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <input type="text" placeholder="Password" required>
+                        <input class="name " type="text" placeholder="Name" required>
+                        <input class="email my-2"type="email" placeholder="Email" required>
+                        <input class="pswd my2"type="text" placeholder="Password" required>
                     </div>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Forgot Your Password</p>
                     <div class="icons">
                         <i class="fa-brands fa-square-x-twitter"></i>
                         <i class="fa-brands fa-facebook-f"></i>
@@ -173,7 +183,6 @@
         </div>
     </footer>
     <!-- footer -->
-    <a href="#" class="arrow"><i><img src="images/up-arrow-double.png" alt="" width="50px"></i></a>
         <script src="plugin/jquery.min.js"></script>
         <script src="plugin/slick.js"></script>
         <script src="bootstrap/js/bootstrap.bundle.min.js"></script>

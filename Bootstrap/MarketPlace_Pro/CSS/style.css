@@ -1,195 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.navbar-container {
-    display: grid;
-    grid-template-columns: 1fr auto; /* Makes first column flexible and second auto-sized */
-    align-items: center; /* Vertically center the content */
-    width: 100%;
-    height: 7vh; /* Adjust height as needed */
-    background-color: #a9a9a926; /* Semi-transparent background */
+
+/*-----Top Navigation Bar-----*/
+#btn-login:hover,
+#btn-signup:hover {
+            background-color: darkblue;
+            color: white; 
+            border-color:darkblue; 
 }
 
+/*-----Top Navigation Bar-----*/
 
-.top-navbar
-{
-    width: 100%;
-    height: 7vh;
-    /* background-color: #a9a9a926; */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content:space-between;
-}
-.top-icons
-{
-    margin-left: 45px;
-}
-.top-icons i{
-    font-size: 20px;
-    color: #1c1c50;
-    margin-left: 10px;
-    cursor: pointer;
-}
-.other-links{
-    margin-right: 33px;
-}
-.other-links i{
-    color: #1c1c50;
-    font-size: 20px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-#btn-login{
-    width: 100px;
-    border: 1px solid #1c1c50;
-    font-weight: bold;
-    border-radius: 5px;
-    height: 3ch;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#btn-login a{
-    text-decoration: none;
-    color: #1c1c50;
-    transition: 0.5s ease;
-}
-#btn-login a:hover{
-    background-color:#1c1c50 ;
-    color: white;
-}
-
-#btn-login:hover{
-    background-color:#1c1c50 ;
-    color: white;
-}
-
-#btn-signup{
-    width: 100px;
-    border: 1px solid #1c1c50;
-    font-weight: bold;
-    border-radius: 5px;
-    height: 3ch;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#btn-signup a{
-    text-decoration: none;
-    color: #1c1c50;
-    transition: 0.5s ease;
-}
-#btn-signup a:hover{
-    background-color:#1c1c50 ;
-    color: white;
-}
-
-#btn-signup:hover{
-    background-color:#1c1c50 ;
-    color: white;
-}
-
-.home-link {
-    color: #ff0000; /* Red color for Home */
-}
-
-.clothe-link {
-    color: #00ff00; /* Green color for Clothe */
-}
-
-.category-link {
-    color: #0000ff; /* Blue color for Category */
-}
-
-.about-link {
-    color: #ff00ff; /* Magenta color for About Us */
-}
-
-.contact-link {
-    color: #00ffff; /* Cyan color for Contact Us */
-}
-
-/* Media Queries for Responsive Design */
-
-/* Mobile L (up to 767px) */
-@media screen and (max-width: 767px) {
-    .top-icons {
-        margin-left: 15px; /* Reduced margin for mobile screens */
-    }
-    .top-icons i {
-        font-size: 16px; /* Slightly smaller icons */
-    }
-
-    .other-links {
-        margin-right: 15px; /* Reduced margin for mobile screens */
-    }
-    .other-links i {
-        font-size: 16px; /* Slightly smaller icons */
-    }
-
-    #btn-login,
-    #btn-signup {
-        width: 80px; /* Adjusted width */
-        height: 3ch; /* Adjusted height */
-        font-size: 14px; /* Adjusted font size */
-    }
-}
-
-/* Mobile M (up to 480px) */
-@media screen and (max-width: 480px) {
-    .top-icons {
-        margin-left: 5px; /* Even smaller margin */
-    }
-    .top-icons i {
-        font-size: 14px; /* Smaller icons for smaller screens */
-    }
-
-    .other-links {
-        margin-right: 5px; /* Even smaller margin */
-    }
-    .other-links i {
-        font-size: 14px; /* Smaller icons for smaller screens */
-    }
-
-    #btn-login,
-    #btn-signup {
-        width: 60px; /* Adjusted width */
-        height: 3ch; /* Adjusted height */
-        font-size: 12px; /* Adjusted font size */
-    }
-}
-
-/* Mobile XS (up to 350px) */
-@media screen and (max-width: 350px) {
-    .top-icons {
-        margin-left: 5px;
-    }
-    .top-icons i {
-        font-size: 12px;
-    }
-
-    .other-links {
-        margin-right: 10px;
-    }
-    .other-links i {
-        font-size: 12px;
-    }
-
-    #btn-login,
-    #btn-signup {
-        width: 50px; /* Adjusted width for very small screens */
-        height: 3vh; /* Adjusted height */
-        font-size: 10px; /* Adjusted font size */
-    }
-}
   /* home section  */
   .home-section{
     width: 100%;
     height: 93vh;
     background-color: #a9a9a926;
   }
-/* nav bar */
+  /*----Navigation Bar Start----*/
 #nav-bar{
     background-color: #1c1c50;
     font-size: 16px;
@@ -216,15 +42,15 @@
 .dropdown li a{
     color: white;
 }
-.search-btn{
+#search-btn{
     color: white;
     border: 1px solid white;
 }
 .search-btn:hover{
     background-color: #1c1c50;
 }
-/* nav bar */
-/* home content */
+  /*---Navigation Bar End---*/
+  /* Home content start */
 .home{
     display: flex;
     align-items: center;
@@ -272,49 +98,94 @@
     color:white;
 }
 
-@media screen and (max-width:800px){
-    .content h3{
-        margin-left: 50px;
+/* Media query for large laptops (≥1200px) */
+@media screen and (min-width: 1200px) {
+    .content h3 {
+        font-size: 50px;
+    }
+    .content h3 span {
         font-size: 40px;
     }
-    .content p{
-        margin-left: 50px;
-    }
-    .content #shopnow{
-        margin-left: 50px;
-    }
 }
-@media screen and (max-width:570px){
-    .content h3{
-        margin-left: 20px;
-    }
-    .content p{
-        margin-left: 20px;
-    }
-    .content #shopnow{
-        margin-left: 20px;
-    }
-}
-@media screen and (max-width:799px){
-    .home-section{
-        height: 150vh;
-    }
-}
-@media screen and (max-width:550px){
-    .home-section{
-        height: 100vh;
-    }
-}
-/* home content */
-/* home section  */
 
-/* top cards */
+/* Media query for laptops and tablets (768px to 1200px) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .content h3 {
+        font-size: 40px;
+        margin-left: 40px;
+    }
+    .content h3 span {
+        font-size: 35px;
+    }
+    .content p,
+    .content #shopnow {
+        margin-left: 40px;
+    }
+    .home .img,
+    .home .content {
+        flex: 1 1 100%; /* Stack content for better readability */
+    }
+}
+
+/* Media query for tablets and large mobiles (≤768px) */
+@media screen and (max-width: 768px) {
+    .content h3 {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    .content h3 span {
+        font-size: 25px;
+    }
+    .content p,
+    .content #shopnow {
+        margin-left: 30px;
+    }
+    .home .img img {
+        width: 100%;
+    }
+    .home .img,
+    .home .content {
+        flex: 1 1 100%; /* Full width for both content and image */
+    }
+    #shopnow {
+        width: 180px;
+        height: 38px;
+    }
+}
+/* Media query for small mobiles (≤480px) */
+@media screen and (max-width: 480px) {
+    .content h3 {
+        font-size: 24px;
+        margin-left: 15px;
+    }
+    .content h3 span {
+        font-size: 20px;
+    }
+    .content p,
+    .content #shopnow {
+        margin-left: 15px;
+    }
+    .home .img img {
+        width: 100%;
+    }
+    .home .img,
+    .home .content {
+        flex: 1 1 100%; /* Stack vertically */
+    }
+    #shopnow {
+        width: 150px;
+        height: 36px;
+    }
+}
+/*------Home content-----*/
+/*---Top cards Start---*/
 #top-cards{
     margin-top: 30px;
     font-family: 'Roboto Slab', serif;
     }
 #top-cards .card img{
-    height: 60vh;
+    height: 50vh;
+    margin-right: 10px;
     }
 #top-cards h5{
     color: #1c1c50;
@@ -322,7 +193,7 @@
     }
 #top-cards button{
     width: 150px;
-    height: 33px;
+    height: 35px;
     font-weight: bold;
     letter-spacing: 3px;
     background: transparent;
@@ -335,15 +206,41 @@
     background-color: #1c1c50;
     color: white;
 }
-/* Default grayscale effect */
+/* home page section cards */
+.card {
+    border: none;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: #fff; /* Optional: ensures background color */
+    border-radius: 8px;     /* Optional: adds rounded corners */
+    display: flex;          /* Ensures flexible box layout */
+    flex-direction: column; /* Aligns content vertically */
+    height: 100%;           /* Makes sure the card takes full height of its container */
+}
+
 .card-img-wrapper img {
     transition: filter 0.3s ease; 
 }
+/* Responsive image styling */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effects */
+.card:hover img {
+    filter: grayscale(30%);
+    transform: scale(1.05);
+}
+/*---Top cards End---*/
+/* home page section cards */
 
 
-
-
-/* top cards */
+/* ----------Banner Start---------*/
 /* banner */
 .banner{
     width: 100%;
@@ -416,24 +313,24 @@
     border: none;
 }
 /* banner2 */
-
-/*------------------------- product cards --------------------*/
-#product-cards{
-    font-family: 'Roboto Slab', serif;
-    margin-top: 100px;
+/* ----------Banner End---------*/
+/* CSS to style the h1 headings */
+h1.text-center {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    color: #333; /* Dark gray color for the text */
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    font-weight: bold; /* Make the font bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    margin: 20px 0; /* Adjust margin for spacing */
+    padding: 10px; /* Add some padding for better spacing */
+    border-bottom: 3px solid #f39c12; /* Add a bottom border with color */
+    display: inline-block; /* Make sure the border fits around the text */
+    background: linear-gradient(135deg, #f1c40f, #f39c12); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
+    text-align: center; /* Center the text */
+    text-transform: uppercase; /* Transform text to uppercase */
 }
-#product-cards .card{
-    box-shadow:rgba(100,100,111,0.2)0px 7px 29px 0px;
-}
-/* ----------------- */
-.card-img {
-    width: 100%; /* Make the image fill the width of its container */
-    height: 200px; /* Set a fixed height for the images */
-    object-fit: cover; /* Crop the image to fit the container */
-}
-
-/* -------------------- */
-
 /* ----card-clothe---- */
 /* Ensuring the card-clothe class has a consistent look */
 /* Card container styling */
@@ -492,181 +389,9 @@
 /* ----card-clothe---- */
 
 
-#product-cards h1{
-    margin-top: 30px;
-    color: #1c1c50;
-    text-shadow: 1px 1px 1px black;
-}
-
-/* -------------*/
-/* CSS to style the h1 headings */
-h1.text-center {
-    font-size: 2.5rem; /* Adjust font size as needed */
-    color: #333; /* Dark gray color for the text */
-    font-family: 'Arial', sans-serif; /* Change the font family */
-    font-weight: bold; /* Make the font bold */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
-    margin: 20px 0; /* Adjust margin for spacing */
-    padding: 10px; /* Add some padding for better spacing */
-    border-bottom: 3px solid #f39c12; /* Add a bottom border with color */
-    display: inline-block; /* Make sure the border fits around the text */
-    background: linear-gradient(135deg, #f1c40f, #f39c12); /* Gradient background */
-    -webkit-background-clip: text; /* Clip the background to the text */
-    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
-    text-align: center; /* Center the text */
-    text-transform: uppercase; /* Transform text to uppercase */
-}
-/* -------------- */
-
-#product-cards h4{
-    letter-spacing: 3px;
-    color: #1c1c50;
-    text-shadow: 0px 1px 1px black;
-    /* font-weight: bold; */
-}
-#product-cards h5 span{
-    float: right;
-    color: #1c1c50;
-    cursor: pointer;
-}
-
-/* for cart hovering color orange */
-.fa-cart-shopping {
-    transition: color 0.3s ease; 
-}
-.fa-truck:hover{
-    color: green;
-}
-.fa-thumbs-up:hover{
-    color: green;
-}
-/* Change the color to orange on hover */
-
-.fa-cart-shopping:hover {
-    color: green; /* Color changes to orange on hover */
-}
-/* for cart hovering color orange */
 
 
-/*-------------- for hovering section------------- */
-.card {
-    border: none;
-    overflow: hidden; 
-    position: relative; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-.card img {
-    width: 100%;
-    height: auto;
-    display: block; 
-    transition: filter 0.3s ease, transform 0.3s ease; 
-}
-
-.card:hover img {
-    filter: grayscale(30%); 
-    transform: scale(1.05); 
-}
-
-.card-body {
-    padding: 15px;
-}
-
-@media (max-width: 767.98px) { 
-    .card {
-        margin-bottom: 15px; 
-    }
-}
-/*-------------for hovering section-------------------------*/
-
-.star{
-    color: orange;
-}
-/* view more for product */
-/* Container to center the button */
-.button-container {
-    text-align: center; /* Centers the button horizontally */
-    margin-top: 20px; /* Adds space above the container to move the button down */
-}
-
-/* Styling for the button */
-/* for viewmorebtn */
-#viewmorebtn button{
-    width: 150px;
-    height: 38px;
-    font-weight: bold;
-    background: transparent;
-    color: #1c1c50;
-    border: 2px solid #1c1c50;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#viewmorebtn button:hover{
-    color: white;
-    background-color: #1c1c50;
-    border: none;
-}
-/* for viewmorebtn */
-/*------------------------- product cards --------------------*/
-
-/* offer */
-/* #offer{
-    margin-top: 50px;
-}
-#offer i{
-    font-size: 60px;
-    color: #1c1c50;
-    font-weight: bold;
-} */
-
-/* Styles for the offer section */
-#offer {
-    padding: 40px 0; /* Top and bottom padding */
-    background: #f0f2f5; /* Light background color for the section */
-}
-
-/* Styles for offer cards */
-.offer-card {
-    background: linear-gradient(135deg, #0099cc, #000000); /* Pacific Blue to Black gradient */    
-    border-radius: 15px; /* More rounded corners */
-    padding: 30px; /* Increased padding inside card */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Larger shadow for depth */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
-    text-align: center; /* Center text */
-    color: #fff; /* White text color */
-}
-
-.offer-card i {
-    font-size: 3.5rem; /* Slightly larger icon */
-    margin-bottom: 15px; /* Space between icon and text */
-    transition: color 0.3s; /* Smooth color transition */
-    color: white;
-}
-
-.offer-card h5 {
-    font-size: 1.5rem; /* Larger font size */
-    margin-bottom: 10px; /* Space below the heading */
-    font-weight: 600; /* Bold heading */
-}
-
-.offer-card p {
-    font-size: 1rem; /* Slightly larger font size */
-    color: #e0e0e0; /* Light gray text color */
-}
-
-/* Hover effects */
-.offer-card:hover {
-    transform: translateY(-10px); /* Lift card higher on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Increase shadow on hover */
-}
-
-/* Icon hover color change */
-.offer-card:hover i {
-    color:  #1c1c50 /* Change icon color on hover */
-}
-
-/* offer */
-
-/* footer */
+/*-----Footer Start------- */
 #footer {
     padding: 0 0 30px 0;
     color: #d0d0d0;
@@ -839,22 +564,8 @@ h1.text-center {
     color: #d0d0d0; /* Match color with footer text color */
     font-size: 14px; /* Match font size with other text in footer */
 }
-/* footer */
+/*-----Footer End------- */
 
-html{
-        scroll-behavior: smooth;
-}
-.arrow{
-    position: fixed;
-    background-color: #1c1c50;
-    border-radius: 50px;
-    height: 50px;
-    bottom: 40px;
-    right: 50px;
-    text-decoration: none;
-    align-items: center;
-    line-height: 50px;
-}
 /* login */
 .login-section{
     width: 50%;
@@ -998,3 +709,42 @@ html{
 }
 
 /* contact */
+
+/* for view more btn start */
+#viewmorebtn button{
+    margin-top: 30px;
+    width: 200px;
+    height: 33px;
+    background: transparent;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+}
+#viewmorebtn button:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+/* for view more btn end */
+
+/* for add to cart button */
+.mt-auto button{
+    margin-top: 20px;
+    width: 200px;
+    height: 33px;
+    background: transparent;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+
+}
+.mt-auto button:hover{
+    background-color: #1c1c50;
+    color: white;
+
+}
+
+/* for add to cart button */

@@ -16,31 +16,30 @@
     <!-- font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- font links -->
-    </head>
+</head>
 
 <body>
-    <!-- Top Nav Bar -->
-    <div class="navbar-container">
-        <div class="top-navbar">
-            <div class="top-icons">
-                <i class="fa-brands fa-square-x-twitter"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-pinterest"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
-            </div>
-        </div>
-        <div class="other-links">
-            <button id="btn-login"><a href="login.html">Login</a></button>
-            <button id="btn-signup"><a href="signup.html">Sign Up</a></button>
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
+<!-- top nav bar start -->
+ <div class="top-navbar container-fluid d-flex align-items-center justify-content-between py-3 bg-secondary">
+    <div class="top-icons d-flex align-items-center ms-3 ms-md-5">
+        <i class="fa-brands fa-square-x-twitter me-2"></i>
+        <i class="fa-brands fa-facebook me-2"></i>
+        <i class="fa-brands fa-instagram"></i>
     </div>
-        <!-- nav bar -->
+    <div class="other-links d-flex align-items-center me-2 me-md-5">
+        <button id="btn-login" class="btn btn-outline-dark me-2 text-light">Login</button>
+        <button id="btn-signup" class="btn btn-outline-dark text-light">Sign Up</button>
+        <i class="fa-solid fa-user-tie ms-2"></i>
+        <i class="fa-solid fa-cart-plus ms-2"></i>
+    </div>
+</div>
+<!-- top nav bar end -->
+<!-- Navigation bar Start -->
+        <div class="home-section">
         <nav class="navbar navbar-expand-lg" id="nav-bar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -66,11 +65,13 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
                                 style="background-color: #1c1c50;">
-                                <li><a class="dropdown-item" href="#">Clothin,Shoes & Sun Glasses</a></li>
+                                <li><a class="dropdown-item" href="#">Clothin Shoes & Sun Glasses</a></li>
                                 <li><a class="dropdown-item" href="#">Computers & Accessories</a></li>
                                 <li><a class="dropdown-item" href="#">Sports & Outdoors</a></li>
                                 <li><a class="dropdown-item" href="#">Kitchen & Dinings</a></li>
                                 <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
+                                <li><a class="dropdown-item" href="#">Best Sellers in Books</a></li>
+
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -88,7 +89,7 @@
                 </div>
             </div>
         </nav>
-        <!-- nav bar -->
+        <!-- Navigation bar End -->
 
 
 <!-- banner -->
@@ -104,12 +105,12 @@
 <!-- product cards -->
 <div class="container" id="product-cards">
     <div class="row" style="margin-top: 30px;">
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card-clothe">
-                <img src="images/girl-heel-01.jpg" alt="">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+            <div class="card h-100">
+                <img src="images/girl-heel-01.jpg" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4>High heel</h4>
-                    <p>Fashion Casual High Heel Scandals</p>
+                    <h4 class="card-title">High heel</h4>
+                    <p class="card-text">Fashion Casual High Heel Sandals</p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -121,13 +122,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card-clothe">
-                <img src="images/men-golf-puma-sport-shirt.avif" alt="">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+            <div class="card h-100">
+                <img src="images/men-golf-puma-sport-shirt.avif" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4>Puma Sportshirt</h4>                        
-                    <p>Graphics Years of Sports Men Tee
-                    </p>
+                    <h4 class="card-title">Puma Sportshirt</h4>                        
+                    <p class="card-text">Graphics Years of Sports Men Tee</p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -135,16 +135,16 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>                       
                     </div>
-                    <h5>85 <strike>$99</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    <h5>$85 <strike>$99</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card-clothe">
-                <img src="images/golf-watch.webp" alt="">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+            <div class="card h-100">
+                <img src="images/golf-watch.webp" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4>Smart Watch</h4>                       
-                    <p>Sporty spirit is expressed in a special editi on designed </p>
+                    <h4 class="card-title">Smart Golf Watch</h4>                        
+                    <p class="card-text">Sporty spirit is expressed in a special editi on designe</p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -156,12 +156,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card-clothe">
-                <img src="images/men-shot-pant.jpg" alt="">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+            <div class="card h-100">
+                <img src="images/men-shot-pant.jpg" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4>Shot Pants</h4>
-                    <p>Casual Shot Pant With Slim Fit</p>
+                    <h4 class="card-title">Shot Pants</h4>                        
+                    <p class="card-text">Casual Shot Pant With Slim Fit</p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -169,18 +169,16 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>                       
                     </div>
-                    <h5>$25 <strike>$39</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    <h5>$55 <strike>$65</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card-clothe">
-                <img src="images/man-wallet-01.jpg" alt="">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+            <div class="card h-100">
+                <img src="images/man-wallet-01.jpg" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4>Men Wallet</h4>
-                    <p>Slim Leather Wallet with Blocking Card Holder</p>
+                    <h4 class="card-title">Men Wallet</h4>
+                    <p class="card-text">Slim Leather Wallet with Blocking Card Holder</p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -188,16 +186,16 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>                       
                     </div>
-                    <h5>$12.99 <strike>$14.99</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    <h5>$39.99 <strike>$50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card-clothe">
-                <img src="images/sun-glasses-men.jpg" alt="">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+            <div class="card h-100">
+                <img src="images/sun-glasses-men.jpg" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4>Police Sun Glasses</h4>
-                    <p>Choose from a wide range of designer for men</p>
+                    <h4 class="card-title">Police Sun Glasses</h4>                        
+                    <p class="card-text">Choose from a wide range of designer for men</p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -205,17 +203,16 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>                       
                     </div>
-                    <h5>$35 <strike>$39.99</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    <h5>$35 <strike>$39.99</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card-clothe">
-                <img src="images/women-leather-boot.avif" alt="">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+            <div class="card h-100">
+                <img src="images/women-leather-boot.avif" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4>Leather Boot</h4>
-                    <p>Homemade Genuine Leather Ankle Boots for Lady Casual Shoe
-                    </p>
+                    <h4 class="card-title">Leather Boot</h4>                        
+                    <p class="card-text">Homemade Genuine Leather Ankle Boots for Lady Casual Shoe</p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -223,16 +220,16 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>                       
                     </div>
-                    <h5>$135 <strike>$150</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    <h5>$455 <strike>$499</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card-clothe">
-                <img src="images/women-leather-bag.jpeg" alt="">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+            <div class="card h-100">
+                <img src="images/women-leather-bag.jpeg" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4>Women Leather Bag</h4>
-                    <p>Stylish and Genuine Leather Special Designed</p>
+                    <h4 class="card-title">Women Leather Bag</h4>                        
+                    <p class="card-text">Stylish and Genuine Leather Special Designed</p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -240,16 +237,16 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>                       
                     </div>
-                    <h5>110 <strike>$170</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    <h5>$110 <strike>$170</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card-clothe">
-                <img src="images/open-ear-head-phone.jpg" alt="">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+            <div class="card h-100">
+                <img src="images/open-ear-head-phone.jpg" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4>Open Ear Headphones</h4>
-                    <p>bluetooth 5.4 wireless Earbuds built in Mic</p>
+                    <h4 class="card-title">Open Ear Headphones</h4>
+                    <p class="card-text">bluetooth 5.4 wireless Earbuds built in Mic</p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -257,16 +254,16 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>                       
                     </div>
-                    <h5>$35 <strike>$39.99</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    <h5>$49.99 <strike>$59.99</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card-clothe">
-                <img src="images/projector-01.jpg" alt="">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+            <div class="card h-100">
+                <img src="images/projector-01.jpg" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4>Projector</h4>
-                    <p>1080P synchronize smart phone screen by wifi/usb cable for home entertainment</p>
+                    <h4 class="card-title">Projector</h4>                        
+                    <p class="card-text">1080P synchronize smart phone screen by wifi/usb cable for home entertainment</p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -274,16 +271,16 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>                       
                     </div>
-                    <h5>$89.99 <strike>$99.99</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    <h5>$250 <strike>$300</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card-clothe">
-                <img src="images/car-play-touch-screen.jpg" alt="">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+            <div class="card h-100">
+                <img src="images/car-play-touch-screen.jpg" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4>Carplay and Android Auto Touch Screen</h4>
-                    <p>wireless car steerio with 4k dash camera, 1080P Back Camera</p>
+                    <h4 class="card-title">Carplay and Android Auto Touch Screen</h4>                        
+                    <p class="card-text">wireless car steerio with 4k dash camera, 1080P Back Camera</p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -291,17 +288,16 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>                       
                     </div>
-                    <h5>$139.99 <strike>$159.99</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    <h5>$139.99 <strike>$159.99</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
                 </div>
             </div>
         </div>
-
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card-clothe">
-                <img src="images/bluetooth-speaker-01.jpg" alt="">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 py-3">
+            <div class="card h-100">
+                <img src="images/bluetooth-speaker-01.jpg" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4>Bluetooth Speaker</h4>
-                    <p>Speaker with HD Sound, portable wireless, IPX5 waterproof</p>
+                    <h4 class="card-title">Bluetooth Speaker</h4>                        
+                    <p class="card-text">Speaker with HD Sound, portable wireless, IPX5 waterproof</p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -309,7 +305,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>                       
                     </div>
-                    <h5>$64.99 <strike>$79.99</strike><span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    <h5>$99.00 <strike>$120.00</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
                 </div>
             </div>
         </div>
@@ -319,7 +315,7 @@
 <!-- product cards -->
 
 <!-- products -->
- <div class="container" style="margin-top: 100px;">
+ <div class="container" style="margin-top: 50px;">
  <hr>
 </div>
 <div class="container">
@@ -422,7 +418,6 @@
         </div>
     </footer>
     <!-- footer -->
-    <a href="#" class="arrow"><i><img src="images/up-arrow-double.png" alt="" width="50px"></i></a>
     <script src="plugin/jquery.min.js"></script>
     <script src="plugin/slick.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
