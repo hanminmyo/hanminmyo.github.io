@@ -24,19 +24,24 @@
 
 <body>
     <!-- top nav bar start -->
-    <div class="top-navbar container-fluid d-flex align-items-center justify-content-between py-3 bg-secondary">
-        <div class="top-icons d-flex align-items-center ms-3 ms-md-5">
+    <div class="top-navbar container-fluid d-flex flex-column flex-sm-row align-items-center justify-content-between py-3 bg-secondary">
+        <!-- Social Media Icons -->
+        <div class="top-icons d-flex align-items-center mb-3 mb-sm-0 ms-3 ms-md-5">
             <i class="fa-brands fa-square-x-twitter me-2"></i>
             <i class="fa-brands fa-facebook me-2"></i>
             <i class="fa-brands fa-instagram"></i>
         </div>
-        <div class="other-links d-flex align-items-center me-2 me-md-5">
-            <a href="login.html" class="btn btn-outline-dark me-2 text-light" id="btn-login">Login</a>
-            <a href="signup.html" class="btn btn-outline-dark text-light" id="btn-signup">Sign Up</a>
-            <i class="fa-solid fa-user-tie ms-2"></i>
-            <i class="fa-solid fa-cart-plus ms-2"></i>
+        
+        <!-- Login, Signup, and Cart Section -->
+        <div class="other-links d-flex align-items-center flex-wrap justify-content-center me-2 me-md-5">
+            <a href="login.html" class="btn btn-outline-light me-2 text-light" id="btn-login">Login</a>
+            <a href="signup.html" class="btn btn-outline-light text-light" id="btn-signup">Sign Up</a>
+            <i class="fa-solid fa-user-tie ms-2 text-white icon-hover-orange"></i>
+            <i class="fa-solid fa-cart-plus ms-2 text-white icon-hover-orange"></i>
+            <span class="cart_noti text-black ms-2" id="count-item">0</span>
         </div>
     </div>
+    
     <!-- top nav bar end -->
     <!-- Navigation bar Start -->
     <nav class="navbar navbar-expand-lg" id="nav-bar">
@@ -81,14 +86,14 @@
 
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Search MarketPlace" aria-label="Search">
                     <button class="btn btn-outline-primary" type="submit" id="search-btn">Search</button>
                 </form>
             </div>
         </div>
     </nav>
     <!-- Navigation bar End -->
-    <!-- Home content start-->
+    <!-- Home Page Start-->
     <div class="container home">
         <div class="row">
             <!-- Image Section -->
@@ -97,17 +102,21 @@
             </div>
 
             <!-- Content Section -->
-            <div class="col-12 col-md-6 content">
+            <div class="col-12 col-md-6 content ms-3 py-5">
                 <h3>
                     Authentic and Best Quality Brands Sales & Services
-                    <br> <span>For Your Choices</span>
                 </h3>
-                <p>we're giving warranty for our sales items</p>
-                <button id="shopnow" class="btn btn-outline-dark">Shop Now</button>
+                <!-- <div id="shopnow"><button>SHOP NOW</button></div> -->
+                <div id="shopnow" class="d-flex justify-content-center">
+                    <button class="btn btn-primary">SHOP NOW</button>
+                </div>
+                
+
             </div>
         </div>
     </div>
-    <!-- Home content End -->
+    <!-- Home Page End -->
+
     <!-- Top cards Start -->
     <div class="container" id="top-cards">
         <div class="row">
@@ -185,7 +194,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$32.60</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -207,7 +216,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$120</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -229,7 +238,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$39.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -251,7 +260,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$150</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -273,7 +282,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$12.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -295,7 +304,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$55</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -317,7 +326,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$93</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -339,7 +348,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$19.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -348,7 +357,7 @@
         </div>
         <!-- View More Button -->
         <div class="text-center button-container" style="margin-top: 30px;">
-            <a href="clothe.html" id="viewmorebtn"><button class="btn btn-primary">View More</button></a>
+            <a href="clothe.html" id="view-more-btn"><button class="btn btn-primary">View More</button></a>
         </div>
     </div>
     <!--clothing,Shoes and Jewellary -->
@@ -374,7 +383,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$498.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -395,7 +404,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$999.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -416,7 +425,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>740.53</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -437,7 +446,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>1164.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -446,7 +455,7 @@
         </div>
         <!-- View More Button -->
         <div class="text-center button-container" style="margin-top: 30px;">
-            <a href="clothe.html" id="viewmorebtn"><button class="btn btn-primary">View More</button></a>
+            <a href="clothe.html" id="view-more-btn"><button class="btn btn-primary">View More</button></a>
         </div>
     </div>
     <!--computer and accessories -->
@@ -472,7 +481,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>59.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -493,7 +502,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$15.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -514,7 +523,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$32</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -535,7 +544,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$25</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -545,7 +554,7 @@
 
         <!-- View More Button -->
         <div class="text-center button-container" style="margin-top: 30px;">
-            <a href="clothe.html" id="viewmorebtn"><button class="btn btn-primary">View More</button></a>
+            <a href="clothe.html" id="view-more-btn"><button class="btn btn-primary">View More</button></a>
         </div>
     </div>
     <!--sports & outdoors -->
@@ -569,7 +578,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$29.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -590,7 +599,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>43.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -611,7 +620,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$24.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -632,7 +641,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$19.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -641,7 +650,7 @@
         </div>
         <!-- View More Button -->
         <div class="text-center button-container" style="margin-top: 30px;">
-            <a href="clothe.html" id="viewmorebtn"><button class="btn btn-primary">View More</button></a>
+            <a href="clothe.html" id="view-more-btn"><button class="btn btn-primary">View More</button></a>
         </div>
     </div>
 
@@ -666,7 +675,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$32.60</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -687,7 +696,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$120</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -708,7 +717,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$39.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -729,7 +738,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$150</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -738,7 +747,7 @@
         </div>
         <!-- View More Button -->
         <div class="text-center button-container" style="margin-top: 30px;">
-            <a href="clothe.html" id="viewmorebtn"><button class="btn btn-primary">View More</button></a>
+            <a href="clothe.html" id="view-more-btn"><button class="btn btn-primary">View More</button></a>
         </div>
     </div>
 
@@ -762,7 +771,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$22.40</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -783,7 +792,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$35.00</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -804,7 +813,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$33.99</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -825,7 +834,7 @@
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
                         <h5>$25.00</h5>
-                        <div class="mt-auto">
+                        <div class="mt-auto" id="add-to-cart">
                             <button class="btn btn-primary w-100 add-to-cart-btn">Add to Cart</button>
                         </div>
                     </div>
@@ -835,13 +844,58 @@
 
         <!-- View More Button -->
         <div class="text-center button-container" style="margin-top: 30px;">
-            <a href="clothe.html" id="viewmorebtn"><button class="btn btn-primary">View More</button></a>
+            <a href="clothe.html" id="view-more-btn"><button class="btn btn-primary">View More</button></a>
         </div>
     </div>
 
     <!-- Best sellers in books -->
 
     <!-- product cards end -->
+             <!-- offer -->
+             <div class="container">
+                <div class="row e-grid-footer border-top border-bottom py-sm-4 py-3" style="margin-top: 30px;">
+                    <!-- Free Shipping Section -->
+                    <div class="col-12 col-sm-6 col-md-4 offer-footer mb-3 mb-md-0">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-fort">
+                                <i><img src="images/free-shipping.jpg" alt="Free Shipping" class="img-fluid"
+                                        width="70px"></i>
+                            </div>
+                            <div class="text-form-footer ms-3">
+                                <h3>Free Shipping</h3>
+                                <p>On order over $100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fast Delivery Section -->
+                    <div class="col-12 col-sm-6 col-md-4 offer-footer mb-3 mb-md-0">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-fort">
+                                <i><img src="images/fast-delivery.jpg" alt="Fast Delivery" class="img-fluid"
+                                        width="70px"></i>
+                            </div>
+                            <div class="text-form-footer ms-3">
+                                <h3>Fast Delivery</h3>
+                                <p>World Wide</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Best Choice Section -->
+                    <div class="col-12 col-sm-6 col-md-4 offer-footer">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-fort">
+                                <i><img src="images/best-choice.jpg" alt="Best Choice" class="img-fluid" width="70px"></i>
+                            </div>
+                            <div class="text-form-footer ms-3">
+                                <h3>Best Choice</h3>
+                                <p>of Product</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- offer -->
+    
 
     <!-----footer start----->
     <footer id="footer" style="margin-top: 50px;">
@@ -902,6 +956,22 @@
         </div>
     </footer>
     <!-- footer end -->
+    <script>
+        // Select all "Add to Cart" buttons
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+        let cartCount = parseInt(document.getElementById('count-item').innerText);
+    
+        // Add event listeners to each button
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                // Increment the cart count
+                cartCount++;
+                // Update the cart notification count
+                document.getElementById('count-item').innerText = cartCount;
+            });
+        });
+    </script>
+    
     <script src="plugin/jquery.min.js"></script>
     <script src="plugin/slick.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>

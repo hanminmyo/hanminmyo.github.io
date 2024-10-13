@@ -31,11 +31,13 @@
         <i class="fa-brands fa-instagram"></i>
     </div>
     <div class="other-links d-flex align-items-center me-2 me-md-5">
-        <a href="login.html" class="btn btn-outline-dark me-2 text-light" id="btn-login">Login</a>
-        <a href="signup.html" class="btn btn-outline-dark text-light" id="btn-signup">Sign Up</a>
-        <i class="fa-solid fa-user-tie ms-2"></i>
-        <i class="fa-solid fa-cart-plus ms-2"></i>
-    </div></div>
+        <a href="login.html" class="btn btn-outline-light me-2 text-light" id="btn-login">Login</a>
+        <a href="signup.html" class="btn btn-outline-light text-light" id="btn-signup">Sign Up</a>
+        <i class="fa-solid fa-user-tie ms-2 text-white icon-hover-orange"></i>
+        <i class="fa-solid fa-cart-plus ms-2 text-white icon-hover-orange"></i>
+        <span class="cart_noti text-black" id="count-item">6</span>
+    </div>
+</div>
 <!-- top nav bar end -->
 <!-- Navigation bar Start -->
         <div class="home-section">
@@ -107,27 +109,44 @@
 
 
         <!-- offer -->
-        <div class="container my-5" id="offer">
-            <div class="row text-center">
-                <div class="col-md-4 mb-4">
-                    <div class="offer-card">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h5>Free Shipping</h5>
-                        <p>On Order over $100</p>
+        <div class="container">
+            <div class="row e-grid-footer border-top border-bottom py-sm-4 py-3" style="margin-top: 30px;">
+                <!-- Free Shipping Section -->
+                <div class="col-12 col-sm-6 col-md-4 offer-footer mb-3 mb-md-0">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-fort">
+                            <i><img src="images/free-shipping.jpg" alt="Free Shipping" class="img-fluid"
+                                    width="70px"></i>
+                        </div>
+                        <div class="text-form-footer ms-3">
+                            <h3>Free Shipping</h3>
+                            <p>On order over $100</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="offer-card">
-                        <i class="fa-solid fa-truck"></i>
-                        <h5>Fast Delivery</h5>
-                        <p>World Wide</p>
+                <!-- Fast Delivery Section -->
+                <div class="col-12 col-sm-6 col-md-4 offer-footer mb-3 mb-md-0">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-fort">
+                            <i><img src="images/fast-delivery.jpg" alt="Fast Delivery" class="img-fluid"
+                                    width="70px"></i>
+                        </div>
+                        <div class="text-form-footer ms-3">
+                            <h3>Fast Delivery</h3>
+                            <p>World Wide</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="offer-card">
-                        <i class="fa-solid fa-thumbs-up"></i>
-                        <h5>Big Choice</h5>
-                        <p>Of product</p>
+                <!-- Best Choice Section -->
+                <div class="col-12 col-sm-6 col-md-4 offer-footer">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-fort">
+                            <i><img src="images/best-choice.jpg" alt="Best Choice" class="img-fluid" width="70px"></i>
+                        </div>
+                        <div class="text-form-footer ms-3">
+                            <h3>Best Choice</h3>
+                            <p>of Product</p>
+                        </div>
                     </div>
                 </div>
             </div>

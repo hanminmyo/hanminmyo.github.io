@@ -1,34 +1,39 @@
-
-/*-----Top Navigation Bar-----*/
+/* -------Top Navigation Bar--------- */
 #btn-login:hover,
 #btn-signup:hover {
-            background-color: darkblue;
-            color: white; 
-            border-color:darkblue; 
+            background-color:#f5b500;
+            color: #f5b500; 
+            border-color:#f5b500; 
 }
-
-/*-----Top Navigation Bar-----*/
-
-  /* home section  */
-  .home-section{
-    width: 100%;
-    height: 93vh;
-    background-color: #a9a9a926;
-  }
-  /*----Navigation Bar Start----*/
+.cart_noti{
+    position: relative;
+    top: -20px;
+    right: 9px;
+    background-color:orange;
+    padding:.5px;
+    border-style: 90%;
+    border-radius: 100%;
+    color: red!important;
+}
+.icon-hover-orange {
+    color: white;
+    transition: color 0.3s ease; 
+}
+.icon-hover-orange:hover {
+    color: orange; 
+}
+/* -------Top Navigation Bar End--------- */
 #nav-bar{
     background-color: #1c1c50;
     font-size: 16px;
     font-family: 'Roboto Slab',serif;
 }
 .navbar-brand {
-    color: white !important; /* Force color to be white */
+    color: white !important; 
 }
 .navbar-brand .logo {
-    margin-right: 10px; /* Adjust the value as needed */
+    margin-right: 10px; 
 }
-
-
 #nav-bar .nav-link{
     color: white;
     font-weight: bold;
@@ -49,8 +54,56 @@
 .search-btn:hover{
     background-color: #1c1c50;
 }
-  /*---Navigation Bar End---*/
-  /* Home content start */
+#search-btn:hover {
+    background-color: #f5b500!important;
+    border-color: #f5b500;
+    color: black; 
+}
+
+
+/* ---------Navigation Bar Start--------- */
+#nav-bar{
+    background-color: #1c1c50;
+    font-size: 16px;
+    font-family: 'Roboto Slab',serif;
+}
+.navbar-brand {
+    color: white !important; 
+}
+.navbar-brand .logo {
+    margin-right: 10px; 
+}
+#nav-bar .nav-link{
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: 0.5s ease;
+}
+#nav-bar .nav-link:hover{
+    color: white;
+    border-radius: 5px;
+}
+.dropdown li a{
+    color: white;
+}
+#search-btn{
+    color: white;
+    border: 1px solid white;
+}
+.search-btn:hover{
+    background-color: #1c1c50;
+}
+#search-btn:hover {
+    background-color: #f5b500!important;
+    border-color: #f5b500;
+    color: black; 
+}
+/* ---------Navigation Bar End--------- */
+
+
+
+
+/* ---------Home Page (Head Phone Section) Start--------- */
 .home{
     display: flex;
     align-items: center;
@@ -70,34 +123,27 @@
     flex: 1 1 400px;
     margin-top: 30px;
 }
-.content h3{
-    margin-left: 70px;
-    font-size: 50px;
-    text-shadow: 1px 1px 1px black;
-    color: #1c1c50;
-    font-weight: bold;
-}
-.content h3 span{
-    font-size: 40px;
-}
-.content p{
-    margin-left: 70px;
-    color: #1c1c50;
-}
-.content #shopnow{
-    margin-left: 70px;
+#shopnow button{
     width: 200px;
-    height: 38px;
-    border: 2px solid #1c1c50;
+    height: 32px;
+    color: black;
+    background-color: #f5b500;
+    border: none;
+    letter-spacing: 3px;
     font-weight: bold;
-    transition: 0.5s ease;
-    cursor: pointer;
+    transition: 0.3s ease;
+    cursor: pointer;    
 }
-.content #shopnow:hover{
-    background-color:#1c1c50;
-    color:white;
+#shownow{
+    margin-top: 5px;
 }
-
+#shopnow button:hover{
+    background-color: #f5b500!important;
+    box-shadow: 0 0 5px #f5b500,
+                0 0 20px #f5b500,
+                0 0 60px #f5b500,
+                0 0 150px #f5b500;
+}
 /* Media query for large laptops (≥1200px) */
 @media screen and (min-width: 1200px) {
     .content h3 {
@@ -177,49 +223,91 @@
         height: 36px;
     }
 }
-/*------Home content-----*/
-/*---Top cards Start---*/
-#top-cards{
-    margin-top: 30px;
-    font-family: 'Roboto Slab', serif;
-    }
-#top-cards .card img{
-    height: 50vh;
-    margin-right: 10px;
-    }
-#top-cards h5{
-    color: #1c1c50;
-    font-weight: bold;
-    }
+/* ---------Home Page (Head Phone Section) End--------- */
+
+/* ---------Home Page (Top Cards Section) Start--------- */
+/*----garmin watch, shoe and lv bag  ---------------*/
 #top-cards button{
-    width: 150px;
-    height: 35px;
-    font-weight: bold;
+    width: 200px;
+    height: 32px;
+    background-color: #f5b500;
+    border: none;
     letter-spacing: 3px;
-    background: transparent;
-    color: #1c1c50;
-    border: 2px solid #1c1c50;
-    transition: 0.5s ease;
-    cursor: pointer;
-    }
-#top-cards button:hover{
-    background-color: #1c1c50;
-    color: white;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;    
 }
-/* home page section cards */
+#top-cards{
+    margin-top: 5px;
+}
+#top-cards button:hover{
+    background-color: #f5b500;
+    box-shadow: 0 0 5px #f5b500,
+                0 0 20px #f5b500,
+                0 0 60px #f5b500,
+                0 0 150px #f5b500;
+}
+/* ---------Home Page (Top Cards Section) End--------- */
+
+
+/* ---------Home Page (Product Cards Section) --------- */
+#add-to-cart button{
+    width: 200px;
+    height: 32px;
+    background-color: #f5b500;
+    border: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;    
+}
+#add-to-cart{
+    margin-top: 5px;
+}
+#add-to-cart button:hover{
+    background-color: #f5b500;
+    box-shadow: 0 0 5px #f5b500,
+                0 0 20px #f5b500,
+                0 0 60px #f5b500,
+                0 0 150px #f5b500;
+}
+#view-more-btn button{
+    width: 200px;
+    height: 32px;
+    color: black!important;
+    background-color: #f5b500;
+    border: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;    
+}
+#view-more-btn{
+    margin-top: 5px;
+}
+#view-more-btn button:hover{
+    color: white!important;
+    background-color: #f5b500;
+    box-shadow: 0 0 5px #f5b500,
+                0 0 20px #f5b500,
+                0 0 60px #f5b500,
+                0 0 150px #f5b500;
+}
+/* ---------Home Page (Product Cards Section) --------- */
+
+/* ----------For all images card effect of home&clothe.html--------*/
 .card {
     border: none;
     overflow: hidden;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    background-color: #fff; /* Optional: ensures background color */
-    border-radius: 8px;     /* Optional: adds rounded corners */
-    display: flex;          /* Ensures flexible box layout */
-    flex-direction: column; /* Aligns content vertically */
-    height: 100%;           /* Makes sure the card takes full height of its container */
+    background-color: #fff; 
+    border-radius: 8px;     
+    display: flex;          
+    flex-direction: column; 
+    height: 100%;           
 }
-
 .card-img-wrapper img {
     transition: filter 0.3s ease; 
 }
@@ -230,18 +318,14 @@
     display: block;
     transition: filter 0.3s ease, transform 0.3s ease;
 }
-
 /* Hover effects */
 .card:hover img {
     filter: grayscale(30%);
     transform: scale(1.05);
 }
-/*---Top cards End---*/
-/* home page section cards */
+/* ----------For all images card effect of home&clothe.html--------*/
 
-
-/* ----------Banner Start---------*/
-/* banner */
+/*------------Banner For Home Page--------------*/
 .banner{
     width: 100%;
     height: 50vh;
@@ -272,13 +356,13 @@
     cursor: pointer;
 }
 #bannerbtn button:hover{
-    background-color: #1c1c50;
+    background-color: #f5b500;
     border: none;
 }
+/*------------Banner For Home Page--------------*/
 
-/* banner */
 
-/* banner2 */
+/*------------Banner For Clothe Page--------------*/
 .banner2{
     width: 100%;
     height: 50vh;
@@ -310,42 +394,43 @@
     cursor: pointer;
 }
 #bannerbtn2 button:hover{
-    background-color: #1c1c50;
+    background-color:#f5b500;
     border: none;
 }
-/* banner2 */
-/* ----------Banner End---------*/
-/* CSS to style the h1 headings */
+/*------------Banner For Clothe Page--------------*/
+
+
+/*----------CSS Style for all h1 heading of Home Page---------- */
 h1.text-center {
-    font-size: 2.5rem; /* Adjust font size as needed */
-    color: #333; /* Dark gray color for the text */
-    font-family: 'Arial', sans-serif; /* Change the font family */
-    font-weight: bold; /* Make the font bold */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
-    margin: 20px 0; /* Adjust margin for spacing */
-    padding: 10px; /* Add some padding for better spacing */
-    border-bottom: 3px solid #f39c12; /* Add a bottom border with color */
-    display: inline-block; /* Make sure the border fits around the text */
-    background: linear-gradient(135deg, #f1c40f, #f39c12); /* Gradient background */
-    -webkit-background-clip: text; /* Clip the background to the text */
-    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
-    text-align: center; /* Center the text */
-    text-transform: uppercase; /* Transform text to uppercase */
+    font-size: 2.5rem; 
+    color: #333; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0; 
+    padding: 10px; 
+    border-bottom: 3px solid #f39c12; 
+    display: inline-block; 
+    background: linear-gradient(135deg, #f1c40f, #f39c12); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-align: center; 
+    text-transform: uppercase; 
 }
-/* ----card-clothe---- */
-/* Ensuring the card-clothe class has a consistent look */
-/* Card container styling */
+/*----------CSS Style for all h1 heading of Home Page---------- */
+
+/*----------Cards from cloth.html page------------------ */
 .card-clothe {
     border: none;
     overflow: hidden;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    background-color: #fff; /* Optional: ensures background color */
-    border-radius: 8px;     /* Optional: adds rounded corners */
-    display: flex;          /* Ensures flexible box layout */
-    flex-direction: column; /* Aligns content vertically */
-    height: 100%;           /* Makes sure the card takes full height of its container */
+    background-color: #fff; 
+    border-radius: 8px;     
+    display: flex;          
+    flex-direction: column; 
+    height: 100%;           
 }
 
 /* Responsive image styling */
@@ -365,34 +450,31 @@ h1.text-center {
 /* Media Queries for responsiveness */
 @media (max-width: 1200px) {
     .card-clothe {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px; 
     }
 }
 
 @media (max-width: 992px) {
     .card-clothe {
-        padding: 8px; /* Further adjust padding */
+        padding: 8px; 
     }
 }
 
 @media (max-width: 768px) {
     .card-clothe {
-        padding: 5px; /* Minimal padding for very small screens */
+        padding: 5px; 
     }
 }
 
 @media (max-width: 576px) {
     .card-clothe {
-        padding: 5px; /* Ensure consistency on extra small screens */
-        /* Additional adjustments as needed */
+        padding: 5px; 
+        
     }
 }
-/* ----card-clothe---- */
+/*----------Cards from cloth.html page------------------ */
 
-
-
-
-/*-----Footer Start------- */
+/*--------------Footer Section Start------------------ */
 #footer {
     padding: 0 0 30px 0;
     color: #d0d0d0;
@@ -493,7 +575,7 @@ h1.text-center {
 
 #footer .footer-top.footer-contact h4 {
     font-size: 22px;
-    margin: 0 0 30px 0; /* Adjust margin as needed */
+    margin: 0 0 30px 0; 
     padding: 2px 0;
     line-height: 1;
     font-weight: 700;
@@ -552,22 +634,44 @@ h1.text-center {
     height: 36px;
     transition: 0.5s ease;
 }
-
 /* Center copyright text */
 #footer .footer-bottom {
     text-align: center;
-    padding: 4px 0; /* Adjust padding as needed */
-    background-color: #1c1c50; /* Same background color for consistency */
+    padding: 4px 0; 
+    background-color: #1c1c50; 
 }
-
 #footer .footer-bottom .copyright {
     margin: 0;
-    color: #d0d0d0; /* Match color with footer text color */
-    font-size: 14px; /* Match font size with other text in footer */
+    color: #d0d0d0; 
+    font-size: 14px; 
 }
-/*-----Footer End------- */
+/*--------------Footer Section Start------------------ */
 
-/* login */
+
+/*--------------For Login Section------------------ */
+/* -------- */
+#login{
+    margin-top: 10px;
+}
+#login button{
+    width: 200px;
+    height: 32px;
+    color: white;
+    background-color: #1c1c50;
+    border: none;
+    font-weight: bold;
+}
+@media screen and (max-width:992px){
+    #side2 input{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 330x) {
+        #side2 input{
+    width: 200px;
+    }
+}
+/* ----------- */
 .login-section{
     width: 50%;
     margin: 20px;
@@ -603,6 +707,9 @@ h1.text-center {
     text-decoration: none;
     color: white;
 }
+/*--------------For Login Section------------------ */
+
+/*--------------For Signup Section------------------ */
 #side2{
     background-color: white;
     border-radius: 5px;
@@ -631,30 +738,9 @@ h1.text-center {
     margin-left: 10px;
     cursor: pointer;
 }
-#login{
-    margin-top: 10px;
-}
-#login button{
-    width: 200px;
-    height: 32px;
-    color: white;
-    background-color: #1c1c50;
-    border: none;
-    font-weight: bold;
-}
-@media screen and (max-width:992px){
-    #side2 input{
-        width: 300px;
-    }
-}
-@media screen and (max-width: 330x) {
-        #side2 input{
-    width: 200px;
-    }
-}
-/* login */
+/*--------------For Signup Section------------------ */
 
-/* about */
+/*--------------For About Section------------------ */
 #about{
     margin-top: 50px;
 }
@@ -663,9 +749,10 @@ h1.text-center {
     font-weight: bold;
     color: #1c1c50;
 }
-/* about */
+/*--------------For About Section------------------ */
 
-/* contact */
+
+/*--------------For Contact Section------------------ */
 #contact{
     margin-top: 50px;
 }
@@ -694,24 +781,32 @@ h1.text-center {
     color: #1c1c50;
 }
 #messagebtn button{
-    margin-top: 30px;
     width: 200px;
-    height: 33px;
-    background: transparent;
-    border: 2px solid #1c1c50;
-    color: #1c1c50;
-    font-weight: bold;
+    height: 32px;
+    color: black!important;
+    background-color: #f5b500;
+    border: none;
     letter-spacing: 3px;
-    transition: 0.5s ease;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;    
+}
+#messagebtn{
+    margin-top: 5px;
 }
 #messagebtn button:hover{
-    background-color: #1c1c50;
-    color: white;
+    color: white!important;
+    background-color: #f5b500;
+    box-shadow: 0 0 5px #f5b500,
+                0 0 20px #f5b500,
+                0 0 60px #f5b500,
+                0 0 150px #f5b500;
 }
+/*--------------For Contact Section------------------ */
 
-/* contact */
 
-/* for view more btn start */
+/*--------------For View More & Add to Cart Button from Home Page------------------ */
+/* ---view more-------- */
 #viewmorebtn button{
     margin-top: 30px;
     width: 200px;
@@ -727,9 +822,7 @@ h1.text-center {
     background-color: #1c1c50;
     color: white;
 }
-/* for view more btn end */
-
-/* for add to cart button */
+/* --------add to cart----- */
 .mt-auto button{
     margin-top: 20px;
     width: 200px;
@@ -747,5 +840,21 @@ h1.text-center {
     color: white;
 
 }
+/*--------------For View More & Add to Cart Button from Home Page------------------ */
 
-/* for add to cart button */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
