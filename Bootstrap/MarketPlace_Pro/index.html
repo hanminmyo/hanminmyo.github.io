@@ -36,9 +36,9 @@
         <div class="other-links d-flex align-items-center flex-wrap justify-content-center me-2 me-md-5">
             <a href="login.html" class="btn btn-outline-light me-2 text-light" id="btn-login">Login</a>
             <a href="signup.html" class="btn btn-outline-light text-light" id="btn-signup">Sign Up</a>
-            <i class="fa-solid fa-user-tie ms-2 text-white icon-hover-orange"></i>
-            <i class="fa-solid fa-cart-plus ms-2 text-white icon-hover-orange"></i>
-            <span class="cart_noti text-black ms-2" id="count-item">0</span>
+            <i class="fa-solid fa-user-tie ms-2 text-white"></i>
+            <i class="fa-solid fa-cart-plus ms-2 text-white"></i>
+            <span class="cart_noti text-light ms-2" id="count-item">0</span>
         </div>
     </div>
     <!-- top nav bar end -->
@@ -957,20 +957,28 @@
     </footer>
     <!-- footer end -->
     <script>
+        // Get the current cart count from localStorage, or set it to 0 if not present
+        let cartCount = localStorage.getItem('cartCount') ? parseInt(localStorage.getItem('cartCount')) : 0;
+    
+        // Update the displayed cart notification count on page load
+        document.getElementById('count-item').innerText = cartCount;
+    
         // Select all "Add to Cart" buttons
         const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
-        let cartCount = parseInt(document.getElementById('count-item').innerText);
     
         // Add event listeners to each button
         addToCartButtons.forEach(button => {
             button.addEventListener('click', function () {
                 // Increment the cart count
                 cartCount++;
-                // Update the cart notification count
+                // Update the cart notification count in the HTML
                 document.getElementById('count-item').innerText = cartCount;
+                // Store the updated cart count in localStorage
+                localStorage.setItem('cartCount', cartCount);
             });
         });
     </script>
+    
     
     <script src="plugin/jquery.min.js"></script>
     <script src="plugin/slick.js"></script>

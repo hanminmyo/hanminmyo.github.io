@@ -1,65 +1,42 @@
 /* -------Top Navigation Bar--------- */
+#btn-login, #btn-signup {
+    background-color: #1c1c50; 
+    border-color: #1c1c50;     
+    color: white;           
+}
 #btn-login:hover,
 #btn-signup:hover {
             background-color:#f5b500;
             color: #f5b500; 
             border-color:#f5b500; 
 }
-.cart_noti{
-    position: relative;
-    top: -20px;
-    right: 9px;
-    background-color:orange;
-    padding:.5px;
-    border-style: 90%;
-    border-radius: 100%;
-    color: red!important;
-}
-.icon-hover-orange {
-    color: white;
-    transition: color 0.3s ease; 
-}
 .icon-hover-orange:hover {
     color: orange; 
 }
+#user-cart button:hover{
+    color: orange;
+}
+/* cart and cart notification */
+#count-item {
+    background-color: #1c1c50;  
+    color: white;               
+    font-size: 14px;           
+    font-weight: bold;         
+    padding: 5px 10px;          
+    border-radius: 50%;         
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    position: relative;        
+    top: -15px;                 
+    left: -10px;                
+    min-width: 30px;            
+    text-align: center;         
+}
+.fa-cart-plus:hover + #count-item {
+    background-color: #f5b500!important; 
+    transition: background-color 0.3s ease;
+}
+/* cart and cart notification */
 /* -------Top Navigation Bar End--------- */
-#nav-bar{
-    background-color: #1c1c50;
-    font-size: 16px;
-    font-family: 'Roboto Slab',serif;
-}
-.navbar-brand {
-    color: white !important; 
-}
-.navbar-brand .logo {
-    margin-right: 10px; 
-}
-#nav-bar .nav-link{
-    color: white;
-    font-weight: bold;
-    margin-left: 5px;
-    transition: 0.5s ease;
-}
-#nav-bar .nav-link:hover{
-    color: white;
-    border-radius: 5px;
-}
-.dropdown li a{
-    color: white;
-}
-#search-btn{
-    color: white;
-    border: 1px solid white;
-}
-.search-btn:hover{
-    background-color: #1c1c50;
-}
-#search-btn:hover {
-    background-color: #f5b500!important;
-    border-color: #f5b500;
-    color: black; 
-}
-
 
 /* ---------Navigation Bar Start--------- */
 #nav-bar{
@@ -857,8 +834,66 @@ h1.text-center {
 }
 /*--------------For View More & Add to Cart Button from Home Page------------------ */
 
+/* ---------------account created--------------*/
 
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
 
+.account-creation {
+    margin-top: 5%;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.account-creation h2 {
+    color: #28a745;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.account-creation p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.account-creation .btn-signin {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+.account-creation .btn-signin:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .account-creation h2 {
+        font-size: 2rem;
+    }
+
+    .account-creation p {
+        font-size: 1rem;
+    }
+}
 
 
 
