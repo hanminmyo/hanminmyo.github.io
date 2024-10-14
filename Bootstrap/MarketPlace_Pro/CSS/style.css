@@ -814,6 +814,7 @@ h1.text-center {
     background-color: #1c1c50;
     color: white;
 }
+
 /* --------add to cart----- */
 .mt-auto button{
     margin-top: 20px;
@@ -867,22 +868,31 @@ body {
     margin-bottom: 1rem;
 }
 
-.account-creation .btn-signin {
+.account-creation .btn-login {
     display: block;
     width: 100%;
     padding: 0.75rem;
     font-size: 1.1rem;
     font-weight: bold;
-    background-color: #007bff;
+    background-color: #1c1c50;
     color: white;
     border-radius: 5px;
     border: none;
     text-align: center;
 }
 
-.account-creation .btn-signin:hover {
-    background-color: #0056b3;
+.account-creation .btn-login:hover {
+    background-color: #f5b500;
 }
+.btn-login button:hover{
+    color: white!important;
+    background-color: #f5b500;
+    box-shadow: 0 0 5px #f5b500,
+                0 0 20px #f5b500,
+                0 0 60px #f5b500,
+                0 0 150px #f5b500;
+}
+
 
 /* Responsive styling */
 @media (max-width: 768px) {
