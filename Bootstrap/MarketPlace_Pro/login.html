@@ -24,18 +24,21 @@
 
 <body>
 <!-- top nav bar start -->
- <div class="top-navbar container-fluid d-flex align-items-center justify-content-between py-3 bg-secondary">
-    <div class="top-icons d-flex align-items-center ms-3 ms-md-5">
+<div class="top-navbar container-fluid d-flex flex-column flex-sm-row align-items-center justify-content-between py-3 bg-secondary">
+    <!-- Social Media Icons -->
+    <div class="top-icons d-flex align-items-center mb-3 mb-sm-0 ms-3 ms-md-5">
         <i class="fa-brands fa-square-x-twitter me-2"></i>
         <i class="fa-brands fa-facebook me-2"></i>
         <i class="fa-brands fa-instagram"></i>
     </div>
-    <div class="other-links d-flex align-items-center me-2 me-md-5">
+    
+    <!-- Login, Signup, and Cart Section -->
+    <div class="other-links d-flex align-items-center flex-wrap justify-content-center me-2 me-md-5">
         <a href="login.html" class="btn btn-outline-light me-2 text-light" id="btn-login">Login</a>
         <a href="signup.html" class="btn btn-outline-light text-light" id="btn-signup">Sign Up</a>
         <i class="fa-solid fa-user-tie ms-2 text-white icon-hover-orange"></i>
         <i class="fa-solid fa-cart-plus ms-2 text-white icon-hover-orange"></i>
-        <span class="cart_noti text-black" id="count-item">6</span>
+        <span class="cart_noti text-black ms-2" id="count-item">0</span>
     </div>
 </div>
 <!-- top nav bar end -->
@@ -92,12 +95,12 @@
         </nav>
         <!-- Navigation bar End -->
         <!-- login -->
-        <div class="container login-section">
+        <div class="container login my-5">
             <div class="row">
                 <div class="col-md-4" id="side1">
                     <h3>Hello Friend!</h3>
                     <p>Create New Account</p>
-                    <div id="btn"><a href="signup.html">Sign up</a></div>
+                    <div id="btn"><a href="signup.html">Sign Up</a></div>
                 </div>
                 <div class="col-md-8" id="side2">
                     <h3>Login Account</h3>
@@ -117,6 +120,7 @@
                 </div>
             </div>
         </div>
+
         <!-- login -->
     <!-- footer -->
     <footer id="footer" style="margin-top: 50px;">

@@ -649,29 +649,6 @@ h1.text-center {
 
 
 /*--------------For Login Section------------------ */
-/* -------- */
-#login{
-    margin-top: 10px;
-}
-#login button{
-    width: 200px;
-    height: 32px;
-    color: white;
-    background-color: #1c1c50;
-    border: none;
-    font-weight: bold;
-}
-@media screen and (max-width:992px){
-    #side2 input{
-        width: 300px;
-    }
-}
-@media screen and (max-width: 330x) {
-        #side2 input{
-    width: 200px;
-    }
-}
-/* ----------- */
 .login-section{
     width: 50%;
     margin: 20px;
@@ -707,6 +684,21 @@ h1.text-center {
     text-decoration: none;
     color: white;
 }
+#btn:hover{
+    background-color: #f5b500;
+    box-shadow: 0 0 5px #f5b500,
+                0 0 20px #f5b500,
+                0 0 60px #f5b500,
+                0 0 150px #f5b500;
+
+}
+#login button:hover{
+        background-color: #f5b500;
+        box-shadow: 0 0 5px #f5b500,
+                    0 0 20px #f5b500,
+                    0 0 60px #f5b500,
+                    0 0 150px #f5b500;
+}
 /*--------------For Login Section------------------ */
 
 /*--------------For Signup Section------------------ */
@@ -738,6 +730,29 @@ h1.text-center {
     margin-left: 10px;
     cursor: pointer;
 }
+#login{
+    margin-top: 10px;
+}
+#login button{
+    width: 200px;
+    height: 32px;
+    color: white;
+    background-color: #1c1c50;
+    border: none;
+    font-weight: bold;
+}
+@media screen and (max-width:992px){
+    #side2 input{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 330x) {
+        #side2 input{
+    width: 200px;
+    }
+}
+
+
 /*--------------For Signup Section------------------ */
 
 /*--------------For About Section------------------ */
