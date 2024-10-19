@@ -101,71 +101,69 @@
             </div>
         </nav>
         <!-- Navigation bar End -->
-        <!-- contact -->
-        <div class="container" id="contact">
-            <h1 class="text-center">CONTACT US</h1>
-            <div class="row" style="margin-top: 50px;">
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card text-center">
-                        <i class="fa-solid fa-square-phone-flip"> Phone</i>
-                        <h6 class="text-center">+959966695119</h6> 
+    
+        <!-- Buy Now Section -->
+        <div class="container mt-5">
+            <h2 class="mb-4 text-center">Select Payment Method</h2>
+        
+            <!-- Marketplace Wallet -->
+            <div class="row payment-method">
+                <div class="col-10 d-flex align-items-center">
+                    <div>
+                        <h5>Marketplace Wallet</h5>
+                        <p>Use your marketplace balance to pay.</p>
                     </div>
                 </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card text-center">
-                        <i class="fa-regular fa-envelope"> Email</i>
-                        <h6 class="text-center">marketplacepro@gmail.com</h6> 
+                <div class="col-2 text-end">
+                    <button class="btn btn-outline-primary">Select</button>
+                </div>
+            </div>
+        
+            <!-- Cash on Delivery -->
+            <div class="row payment-method">
+                <div class="col-10 d-flex align-items-center">
+                    <div>
+                        <h5>Cash on Delivery</h5>
+                        <p>Pay when you receive the package.</p>
                     </div>
                 </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card text-center">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                        <h6 class="text-center">Lanmadaw Tsp, Yangon, Myanmar</h6> 
+                <div class="col-2 text-end">
+                    <i class="fa-solid fa-arrow-right right-arrow"></i>
+                </div>
+            </div>
+        
+            <!-- Debit/Credit Card -->
+            <div class="row payment-method">
+                <div class="col-10 d-flex align-items-center">
+                    <div>
+                        <h5>Debit/Credit Card</h5>
+                        <p>Pay with your Visa, MasterCard, or other credit cards.</p>
                     </div>
+                </div>
+                <div class="col-2 text-end payment-icons">
+                    <img src="images/visacard.jpg" alt="Visa">
+                    <img src="images/mastercard.png" alt="MasterCard">
+                </div>
+            </div>
+        
+            <!-- Bank Transfer -->
+            <div class="row payment-method">
+                <div class="col-10 d-flex align-items-center">
+                    <div>
+                        <h5>Bank Transfer</h5>
+                        <p>Transfer directly from your bank account.</p>
+                    </div>
+                </div>
+                <div class="col-2 text-end payment-icons">
+                    <img src="images/ayabank.png" alt="Bank 1">
+                    <img src="images/kbzbank.png" alt="Bank 2">
+                    <img src="images/uabbank.jpeg" alt="Bank 3">
                 </div>
             </div>
         </div>
-
-        <div class="row" style="margin-top: 30px;">
-            <div class="col-md-4 py-3 py-md-0">
-                <input type="text" class="form-control form-control-sm" id="usr" placeholder="Name"> 
-            </div>
-            <div class="col-md-4 py-3 py-md-0">
-                <input type="text" class="form-control form-control-sm" id="eml" placeholder="Email"> 
-            </div>
-            <div class="col-md-4 py-3 py-md-0">
-                <input type="number" class="form-control form-control-sm" id="phn" placeholder="Phone"> 
-            </div>
-            <div class="form-group col-12" id="comment" style="margin-top: 30px;">
-                <textarea class="form-control form-control-sm" rows="5" id="msg" placeholder="Message"></textarea>
-                <!-- Small textarea -->
-            </div>
-            <div id="messagebtn" class="text-center" style="margin-top: 15px;">
-                <button id="sendMessage" class="btn btn-primary btn-sm">Message</button> 
-            </div>
-            <div id="messageAlert" class="text-center mt-3" style="display:none;">
-                <p class="alert alert-success">Your message was sent successfully!</p>
-            </div>
-        </div>         
-        <script>
-            // Get the button and alert div
-            const messageButton = document.getElementById('sendMessage');
-            const messageAlert = document.getElementById('messageAlert');
         
-            // Add event listener to the button
-            messageButton.addEventListener('click', function() {
-                // Display the success message
-                messageAlert.style.display = 'block';
-                
-                // Optional: Hide the message after 3 seconds
-                setTimeout(function() {
-                    messageAlert.style.display = 'none';
-                }, 3000);
-            });
-        </script>
-    
 
-        <!-- contact -->
+        <!-- Buy Now Section-->
 
 
         <!-- footer -->

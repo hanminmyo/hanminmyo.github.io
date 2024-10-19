@@ -905,15 +905,45 @@ body {
     }
 }
 
+/* for user account */
+.account-menu button {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.order-item img {
+    width: 100%;
+    height: auto;
+}
+/* for user account */
+
+/*----buy now section------*/
+.payment-method {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.payment-method:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-icons img {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.right-arrow {
+    font-size: 20px;
+    margin-left: auto;
+}
 
 
-
-
-
-
-
-
-
+/*----buy now section------*/
 
 
 
