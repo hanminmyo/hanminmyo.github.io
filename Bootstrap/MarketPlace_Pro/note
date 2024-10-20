@@ -1,0 +1,12 @@
+          <a href="" class="course_img_hidden">
+            <img src="images/course01.jpeg" alt="" class="card-img-top course_img_hover">
+          </a>
+
+
+        .course_img_hover:hover{
+            transform: scale(1.1);
+            transition-duration: .7s;
+        }
+        .course_img_hidden{
+            overflow: hidden;
+        }

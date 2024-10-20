@@ -295,10 +295,14 @@
     display: block;
     transition: filter 0.3s ease, transform 0.3s ease;
 }
+
 /* Hover effects */
-.card:hover img {
-    filter: grayscale(30%);
-    transform: scale(1.05);
+.card img:hover{
+    transform: scale(1.1);
+    transition-duration: .7s;
+}
+.card img{
+    overflow: hidden;
 }
 /* ----------For all images card effect of home&clothe.html--------*/
 
@@ -740,6 +744,9 @@ h1.text-center {
     text-align: center;
     font-weight: bold;
     color: #1c1c50;
+}
+.text-justify {
+    text-align: justify;
 }
 /*--------------For About Section------------------ */
 
