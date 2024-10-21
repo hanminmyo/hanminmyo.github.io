@@ -921,6 +921,32 @@ body {
     width: 100%;
     height: auto;
 }
+
+#buy-now-btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #1c1c50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+#buy-now-btn:hover {
+    background-color: #f5b500;
+}
+#buy-now-btn button:hover{
+    color: white!important;
+    background-color: #f5b500;
+    box-shadow: 0 0 5px #f5b500,
+                0 0 20px #f5b500,
+                0 0 60px #f5b500,
+                0 0 150px #f5b500;
+}
+
 /* for user account */
 
 /*----buy now section------*/
