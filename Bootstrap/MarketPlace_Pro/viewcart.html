@@ -75,7 +75,7 @@
                                 <li><a class="dropdown-item" href="index.html#product-cards-home">Home & Kitchen</a></li>
                                 <li><a class="dropdown-item" href="index.html#product-cards-books">Best Sellers in Books</a></li>
                             </ul>
-                        </li>
+                            </li>
                         <li class="nav-item">
                             <a class="nav-link about-link" href="about.html">About Us</a>
                         </li>
@@ -91,69 +91,47 @@
                 </div>
             </div>
         </nav>
-        <!-- Navigation bar End -->
-        <!-- about -->
-        <div class="container" id="about">
-            <h1 class="text-center">ABOUT US</h1>
-            <div class="row" style="margin-top: 50px;">
-                <div class="col-md-6 py-3 py-md-0">
-                    <div class="card">
-                        <img src="images/about-us-03.webp" alt="">
+    <!-- Navigation bar End -->
+    <div class="container mt-5">
+        <h1 class="text-center">View My Cart</h1>
+        <div class="row">
+            <!-- Item 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/sun-glasses-men.jpg" class="card-img-top" alt="Item 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Sun Glasses</h5>
+                        <p class="card-text">Price: $34</p>
+                        <a href="buynow.html" class="viewcart-btn">Buy Now</a>
                     </div>
-                </div>
-                <div class="col-md-6 py-3 py-md-0">
-                    <p class="text-justify">MarketPlace Pro is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. We strives to be Earth’s most customer-centric company, Earth’s best employer, and Earth’s safest place to work. Customer reviews, 1-Click shopping, personalized recommendations, Prime, Fulfillment by MarketPlace sales and services, Just Walk Out technology, Our Studios, and The Climate Pledge are some of the things pioneered by MarketPlace Pro.</p>
                 </div>
             </div>
-        </div>
-        <!-- about -->
 
-
-        <!-- offer -->
-        <div class="container">
-            <div class="row e-grid-footer border-top border-bottom py-sm-4 py-3" style="margin-top: 30px;">
-                <!-- Free Shipping Section -->
-                <div class="col-12 col-sm-6 col-md-4 offer-footer mb-3 mb-md-0">
-                    <div class="d-flex align-items-center">
-                        <div class="icon-fort">
-                            <i><img src="images/free-shipping.jpg" alt="Free Shipping" class="img-fluid"
-                                    width="70px"></i>
-                        </div>
-                        <div class="text-form-footer ms-3">
-                            <h3>Free Shipping</h3>
-                            <p>On order over $100</p>
-                        </div>
+            <!-- Item 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/computer_mice.jpg" class="card-img-top" alt="Item 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Computer Mice</h5>
+                        <p class="card-text">Price: $45</p>
+                        <a href="buynow.html" class="viewcart-btn">Buy Now</a>
                     </div>
                 </div>
-                <!-- Fast Delivery Section -->
-                <div class="col-12 col-sm-6 col-md-4 offer-footer mb-3 mb-md-0">
-                    <div class="d-flex align-items-center">
-                        <div class="icon-fort">
-                            <i><img src="images/fast-delivery.jpg" alt="Fast Delivery" class="img-fluid"
-                                    width="70px"></i>
-                        </div>
-                        <div class="text-form-footer ms-3">
-                            <h3>Fast Delivery</h3>
-                            <p>World Wide</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Best Choice Section -->
-                <div class="col-12 col-sm-6 col-md-4 offer-footer">
-                    <div class="d-flex align-items-center">
-                        <div class="icon-fort">
-                            <i><img src="images/best-choice.jpg" alt="Best Choice" class="img-fluid" width="70px"></i>
-                        </div>
-                        <div class="text-form-footer ms-3">
-                            <h3>Best Choice</h3>
-                            <p>of Product</p>
-                        </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/lv-slinbag.webp" class="card-img-top" alt="Item 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Slim Bag</h5>
+                        <p class="card-text">Price: $29</p>
+                        <a href="buynow.html" class="viewcart-btn">Buy Now</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- offer -->
-
+    </div>
     <!-- footer -->
     <footer id="footer" style="margin-top: 50px;">
         <div class="footer-top">
@@ -213,29 +191,6 @@
         </div>
     </footer>
     <!-- footer -->
-    <script>
-        // Get the current cart count from localStorage, or set it to 0 if not present
-        let cartCount = localStorage.getItem('cartCount') ? parseInt(localStorage.getItem('cartCount')) : 0;
-    
-        // Update the displayed cart notification count on page load
-        document.getElementById('count-item').innerText = cartCount;
-    
-        // Select all "Add to Cart" buttons
-        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
-    
-        // Add event listeners to each button
-        addToCartButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                // Increment the cart count
-                cartCount++;
-                // Update the cart notification count in the HTML
-                document.getElementById('count-item').innerText = cartCount;
-                // Store the updated cart count in localStorage
-                localStorage.setItem('cartCount', cartCount);
-            });
-        });
-    </script>
-
         <script src="plugin/jquery.min.js"></script>
         <script src="plugin/slick.js"></script>
         <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
