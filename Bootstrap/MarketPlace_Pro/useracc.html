@@ -286,6 +286,32 @@
             margin-top: 15px;
         }
     </style>
+    <script>
+        // Reset the cart count to 0 on page load
+        localStorage.setItem('cartCount', 0);
+    
+        // Get the current cart count from localStorage (which is now 0)
+        let cartCount = parseInt(localStorage.getItem('cartCount'));
+    
+        // Update the displayed cart notification count on page load
+        document.getElementById('count-item').innerText = cartCount;
+    
+        // Select all "Add to Cart" buttons
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+    
+        // Add event listeners to each button
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                // Increment the cart count
+                cartCount++;
+                // Update the cart notification count in the HTML
+                document.getElementById('count-item').innerText = cartCount;
+                // Store the updated cart count in localStorage
+                localStorage.setItem('cartCount', cartCount);
+            });
+        });
+    </script>
+    
 
 
     <script src="plugin/jquery.min.js"></script>

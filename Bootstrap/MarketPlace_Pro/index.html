@@ -956,8 +956,11 @@
     </footer>
     <!-- footer end -->
     <script>
-        // Get the current cart count from localStorage, or set it to 0 if not present
-        let cartCount = localStorage.getItem('cartCount') ? parseInt(localStorage.getItem('cartCount')) : 0;
+        // Reset the cart count to 0 on page load
+        localStorage.setItem('cartCount', 0);
+    
+        // Get the current cart count from localStorage (which is now 0)
+        let cartCount = parseInt(localStorage.getItem('cartCount'));
     
         // Update the displayed cart notification count on page load
         document.getElementById('count-item').innerText = cartCount;
@@ -977,8 +980,6 @@
             });
         });
     </script>
-    
-    
     <script src="plugin/jquery.min.js"></script>
     <script src="plugin/slick.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -226,15 +226,18 @@
     </footer>
     <!-- footer -->
     <script>
-        // Get the current cart count from localStorage, or set it to 0 if not present
-        let cartCount = localStorage.getItem('cartCount') ? parseInt(localStorage.getItem('cartCount')) : 0;
-
+        // Reset the cart count to 0 on page load
+        localStorage.setItem('cartCount', 0);
+    
+        // Get the current cart count from localStorage (which is now 0)
+        let cartCount = parseInt(localStorage.getItem('cartCount'));
+    
         // Update the displayed cart notification count on page load
         document.getElementById('count-item').innerText = cartCount;
-
+    
         // Select all "Add to Cart" buttons
         const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
-
+    
         // Add event listeners to each button
         addToCartButtons.forEach(button => {
             button.addEventListener('click', function () {
