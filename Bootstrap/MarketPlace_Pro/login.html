@@ -105,8 +105,8 @@
                 <div class="col-md-8" id="side2">
                     <h3>Login Account</h3>
                     <div class="inp">
-                        <input class="username" type="text" placeholder="User Name" required>
-                        <input class="pswd my-2" type="password" placeholder="Password" required>
+                        <input class="username" type="text" placeholder="User Name" id="username" required>
+                        <input class="pswd my-2" type="password" placeholder="Password" id="password" required>
                     </div>
                     <p>Forgot Your Password</p>
                     <div class="icons">
@@ -117,12 +117,35 @@
                         <i class="fa-brands fa-youtube"></i>
                     </div>
                     <div id="login">
-                        <a href="index.html"><button>LOG IN</button></a>
+                        <button onclick="validateLogin()">LOG IN</button>
                     </div>
                 </div>
             </div>
         </div>
-
+        
+        <script>
+            function validateLogin() {
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+        
+                let alertMessage = '';
+        
+                if (username === '') {
+                    alertMessage += 'Please fill in your username.\n';
+                }
+                if (password === '') {
+                    alertMessage += 'Please fill in your password.\n';
+                }
+        
+                if (alertMessage) {
+                    alert(alertMessage);
+                } else {
+                    // Assuming successful validation, redirect to index.html
+                    window.location.href = 'index.html';
+                }
+            }
+        </script>
+        
         <!-- login -->
     <!-- footer -->
     <footer id="footer" style="margin-top: 50px;">

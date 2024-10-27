@@ -97,28 +97,25 @@
             <div class="row">
                 <div class="col-md-4" id="side1">
                     <h3>Welcome Back!</h3>
-                    <p>Do you have account?Pleas Login here!</p>
+                    <p>Do you have an account? Please Login here!</p>
                     <div id="btn"><a href="login.html">Login</a></div>
                 </div>
                 <div class="col-md-8" id="side2">
                     <h3>Create Your Account</h3>
                     <div class="inp" id="side2">
                         <div class="signup-container">
-                            <form class="signup_form">
-                            <input class="name" type="text" id="name" placeholder="Enter your name" class="signup_input">
-        
-                            <input class="date my-2" type="email" id="email" placeholder="Enter your email" class="signup_input">
-
-                            <input class="date my-2" type="text and number" id="dob" placeholder="Enter your date of birth(day-month-year)" class="signup_input">
-
-                            <input class="pswd my-2" type="password" id="password" placeholder="Enter your password" class="signup_input">
-        
-                            <input class="pswd my-2" type="password" id="password" placeholder="Retype your password" class="signup_input">
-                                                        
+                            <form class="signup_form" id="signupForm">
+                                <input class="name" type="text" id="name" placeholder="Enter your name" class="signup_input">
+                                <input class="date my-2" type="email" id="email" placeholder="Enter your email" class="signup_input">
+                                <input class="date my-2" type="text" id="dob" placeholder="Enter your date of birth (dd-mm-yyyy)" class="signup_input">
+                                <input class="pswd my-2" type="password" id="password" placeholder="Enter your password" class="signup_input">
+                                <input class="pswd my-2" type="password" id="retype_password" placeholder="Retype your password" class="signup_input">
+                                <div id="login">
+                                    <a href="create_acc.html"><button type="submit">SIGN UP</button></a>
+                                </div>                            
                             </form>
                         </div>
                     </div>
-                    
                     <p>Remember my Password</p>
                     <div class="icons">
                         <i class="fa-brands fa-square-x-twitter"></i>
@@ -127,13 +124,34 @@
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-brands fa-youtube"></i>
                     </div>
-                    <div id="login">
-                        <a href="create_acc.html"><button>SIGN UP</button></a>
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- login -->
+        
+        <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+            
+            // Get values from the input fields
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const dob = document.getElementById('dob').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const retypePassword = document.getElementById('retype_password').value.trim();
+        
+            // Check for empty fields
+            if (!name || !email || !dob || !password || !retypePassword) {
+                alert('Please fill the data first.');
+                return;
+            }
+        
+            // If all checks pass, you can submit the form or perform further actions
+            alert('Form submitted successfully!');
+            // You can submit the form data here or redirect
+        });
+        </script>
+            <!-- login -->
     <!-- footer -->
     <footer id="footer" style="margin-top: 50px;">
         <div class="footer-top">
